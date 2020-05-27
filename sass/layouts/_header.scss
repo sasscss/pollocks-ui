@@ -4,7 +4,7 @@
      background-size: cover;    
      background-position: left;     
         
-     animation: header-slider 25s infinite 4s;  
+     animation: header-slider 25s infinite 3.5s;    
      
      display:grid;
      grid-template-rows: min-content 1fr  1fr min-content min-content 1fr;  
@@ -34,6 +34,8 @@
         grid-gap: 1rem; 
         color: rgb(255, 255, 255); 
         font-size: 2rem; 
+        font-weight: 400;
+        letter-spacing: .1rem; 
       
             &::before,
             &::after {
