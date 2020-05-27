@@ -17,7 +17,8 @@ html {
   /* 10px */ }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 2rem; }
 
 body {
   /* we specify base font attributes in body as the font attributes inherit from parent 
@@ -25,32 +26,61 @@ body {
         in body selector */
   font-family: "Lato" ,"Arial", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
-  /* line height 1.7 meaans .. 1.7 times of pre defined height. */
-  line-height: 1.7; }
+  font-size: 1.6rem; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    animation-name: moveInLeft 2s ease-In; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.7rem;
+    animation: moveInRight 2s ease-out; }
 
 @keyframes header-slider {
-  0%, 100% {
-    background-image: url(../../resources/images/header-p1.jpg); }
   25% {
-    background-image: url(../../resources/images/header-p2.jpg); }
-  50% {
     background-image: url(../../resources/images/header-p3.jpg); }
+  60% {
+    background-image: url(../../resources/images/header-p4.jpg); }
   75% {
     background-image: url(../../resources/images/header-p1.jpg); } }
 
 .header {
   height: 100vh;
-  background-image: url(../../resources/images/header-p2.jpg);
+  background-image: url(../../resources/images/header-p1.jpg);
   background-size: cover;
   background-position: left;
-  animation: header-slider 25s infinite; }
-
-.logo-container {
-  margin: 2rem;
-  background-color: rgba(255, 255, 255, 0.6);
-  display: inline-block;
-  border-radius: 10px; }
-
-.logo {
-  height: 4.8rem; }
+  animation: header-slider 25s infinite 4s;
+  display: grid;
+  grid-template-rows: min-content 1fr  1fr min-content min-content 1fr; }
+  .header__logo-container {
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    justify-self: start;
+    border-radius: 10px; }
+  .header__logo {
+    height: 4.8rem; }
+  .header__text--main {
+    justify-self: center; }
+  .header__text-seperator {
+    display: grid;
+    grid-template-columns: 10rem max-content 10rem;
+    align-items: center;
+    justify-self: center;
+    grid-gap: 1rem;
+    color: white;
+    font-size: 2rem; }
+    .header__text-seperator::before, .header__text-seperator::after {
+      align-self: center;
+      content: "";
+      display: inline-block;
+      height: .1rem;
+      background-color: currentColor; }
