@@ -1,0 +1,12 @@
+body {
+    /* we specify base font attributes in body as the font attributes inherit from parent 
+        and body is on top of hirearchy and and all the child elements gets inherited with the properties declared 
+        in body selector */
+    font-family: "Lato" ,"Arial", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    /* line height 1.7 meaans .. 1.7 times of pre defined height. */
+    line-height: 1.7;
+    color: $color-grey-dark;
+    
+  }
