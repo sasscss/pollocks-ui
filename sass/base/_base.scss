@@ -1,0 +1,47 @@
+/*------------------------ Basic setup ----------------------------------*/
+*,
+*::after,
+*::before {
+    /* ----- to set all the elements a common constraints ---*/
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+  
+  html {
+      /* to make the whole typogrphy in relation, we use "rem" which is x times of root font size
+      we use 10px as root font size for easy manipulation of whole px calculation
+      if we want 70px element we give it as 7rem where its value is 70px i.e 7*10px(root font size)
+      lest now make it into percentage where regular default fontsize of browser is 
+      16px so , 16px as 100% then 10px is 62.5% */
+    font-size: 62.5%; /* 10px */ //1rem=10px here
+
+    @include respond(tab-land) {
+      font-size: 56.25%; //9px
+    }
+ 
+    @include respond(tab-port) {
+      font-size: 50%; //1rem=8px
+    }
+    
+    @include respond(big-desktop) {
+      font-size: 75%; // 1rem
+    }
+  }
+  
+  body {
+    box-sizing: border-box; 
+    /*-- not for inheritance ---*/
+    padding: 3rem;
+
+    @include respond(tab-port) {
+      padding: 0;
+    }
+  }
+
+  //color of selection of text in webpage 
+
+  ::selection {
+    background-color: $color-primary;
+    color: $color-white;
+  }
