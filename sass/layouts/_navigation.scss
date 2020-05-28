@@ -1,4 +1,5 @@
 .navigation {
+    font-family: 'Josefin Sans', sans-serif;
     height: 0;
     &__checkbox {
         visibility: hidden;
@@ -7,9 +8,9 @@
     &__button {
         background-color:#fff;   
         height: 5rem;
-        width: 5rem;                
+        width: 5rem;                  
         position: fixed;  
-        top: 6rem;
+        top: 6rem; 
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
@@ -59,18 +60,19 @@
         opacity: 0;
         width: 100vw;  // the width increases form 0  to 100 on animation
         transition: all .8s cubic-bezier(1,.04,.44,1.25);
+
+       
     } 
 
     &__list {
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        left: 50%; 
+        transform: translate(-20%,-50%);   
         list-style: none;
-        text-align: center;
         width: 100%;
     }
-
+  
     &__item {
         margin: 1rem;   
     }
@@ -84,8 +86,8 @@
             text-decoration: none;
             font-size: 3rem;
             font-weight: 300; 
-            padding: .3rem 2rem;   
-            color: #fff; 
+            padding: .3rem 2rem;    
+            color: rgb(119, 112, 112);
             text-transform: uppercase;
             background-image: linear-gradient(130deg ,transparent 0%,transparent 50%,  white 50%);
             background-size: 230%; 
@@ -96,11 +98,11 @@
             }
         }
 
-        &:hover,
+        &:hover,  
         &:active {
-            background-position: 100%;
-            transform: translateX(1rem); 
-            color: red;      
+            border-bottom: .5rem solid cornsilk; 
+            transform: translateX(2.5rem);   
+            color: #fff;      
         }
     }
 
