@@ -1,0 +1,163 @@
+.navigation {
+    height: 0;
+    &__checkbox {
+        visibility: hidden;
+    }
+ 
+    &__button {
+        background-color:#fff;   
+        height: 5rem;
+        width: 5rem;                
+        position: fixed;  
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
+        text-align: center;
+        cursor: pointer;
+
+        // @include respond(tab-port) { 
+        //     height: 5rem;
+        //     width: 5rem;
+        //     position: fixed;
+        //     top: 4.5rem;
+        //     right: 5rem;
+        //   }
+    }
+
+    &__background {
+        height: 4.5rem;
+        width: 4.5rem; 
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem; 
+        right: 6.2rem; 
+     
+        z-index: 1000;  
+        transition: transform .8s ;  
+    
+        // @include respond(tab-port) { 
+        //     height: 4rem;
+        //     width: 4rem;   
+        //     top:  5rem;
+        //     right: 5rem;
+        //   }
+
+       
+    }
+  
+    &__nav {
+        height: 0vh;
+        width: 100%;
+        position: fixed; 
+        top: 0; 
+        left: 0; //if it is right the nav list enters from right 
+        background-image: linear-gradient(rgba(32, 24, 24, 0.9),rgba(15, 8, 8, 0.9)),url(../../resources/images/navigation-bg.jpg);   
+
+        z-index: 1500;
+        opacity: 0;
+        width: 100vw;  // the width increases form 0  to 100 on animation
+        transition: all .8s cubic-bezier(1,.04,.44,1.25);
+    } 
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__item {
+        margin: 1rem;   
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            //inline elements does not take any padding marginns ext.... it only considers its size.....
+            //inline-blocks consideres both its padding and inside content  
+            display: inline-block;
+            text-decoration: none;
+            font-size: 3rem;
+            font-weight: 300; 
+            padding: .3rem 2rem;   
+            color: #fff; 
+            text-transform: uppercase;
+            background-image: linear-gradient(130deg ,transparent 0%,transparent 50%,  white 50%);
+            background-size: 230%; 
+            transition: all .3s;
+
+            span {
+                margin-right: 1rem;  
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            transform: translateX(1rem); 
+            color: red;      
+        }
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        visibility: visible;
+        height: 100vh; 
+    }
+
+
+    //Icon
+
+    &__icon {
+        position: relative;
+        margin-top: 2.6rem; 
+
+        // @include respond(tab-port) { 
+        //     margin-top: 2.5rem; 
+        //   }
+
+        &,
+        &::before,  
+        &::after { 
+            width: 3rem; 
+            height: .22rem;     
+            background-color: #000; 
+            display: inline-block;
+        } 
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;     
+            transition: all .2s; 
+        }
+
+        &::after {top: -.7rem;  } //  &::after {top: -.7rem; transform-origin: right; } it confirms the center of rotation to right side 
+        &::before{top: .7rem;}
+    }
+
+    &__button:hover &__icon::before { top: .9rem;}
+    &__button:hover &__icon::after { top: -.9rem; }  
+
+    &__checkbox:checked + &__button &__icon { 
+        background-color: transparent; 
+        &::before { 
+            top: 0rem; 
+            transform: rotate(135deg); 
+        } 
+        &::after { 
+            top: 0rem;
+            transform: rotate(-135deg);  
+        } 
+        
+    }
+} 

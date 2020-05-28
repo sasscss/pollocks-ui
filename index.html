@@ -27,10 +27,33 @@
     <title>Pollocks School</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo-container">
-            <img src="./resources/images/pollocks-school-logo.png" alt="" class="header__logo">
-        </div>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <!-- <div class="navigation__background">
+            <img src="./resources/images/navigation-bg.jpg" alt="" class="navigation__background--img">
+        </div> -->
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#header" class="navigation__link"><span>01.</span>Who are we</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02.</span>gallery</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03.</span>pollocks wall</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04.</span>faculty</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05.</span>contact us</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header" id="header">
+            <div class="header__logo-container">
+                <img src="./resources/images/pollocks-school-logo.png" alt="" class="header__logo">
+            </div>
         <span></span>
         <span></span>
         <h1 class="heading-primary heading-primary--main header__text--main">celebrate the joy of learning</h1>
