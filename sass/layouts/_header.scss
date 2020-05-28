@@ -2,8 +2,7 @@
      height: 90vh;   
      background-image: linear-gradient(to bottom ,rgba(0,0,0,.2),rgba(0,0,0,.7)),url(../../resources/images/header-p3.jpg);   
      background-size: cover;      
-     background-position: left;            
-     //animation: header-slider 25s infinite 5s;      
+     background-position: left;                 
      
      display:grid;
      grid-template-rows: min-content 1fr  1fr min-content min-content 1fr;  
@@ -27,31 +26,47 @@
 
     &__text--main {
         justify-self: center; 
+        animation: text-main 6.5s; 
          
     }
 
     &__text-seperator {
         display: grid;   
-        grid-template-columns: 10rem max-content 10rem ;        
+        grid-template-columns: minmax(10rem, min-content) max-content minmax(10rem, min-content) ;        
         align-items: center;
         justify-self: center; 
-        grid-gap: 1rem; 
-        color: rgb(255, 255, 255); 
-        font-size: 2rem; 
-        font-weight: 400;
-        letter-spacing: .1rem;  
-        box-shadow: 1rem 1rem 2rem rgba($color: #000, $alpha: .4);    
-
-      
+        grid-gap: 1rem;  
+        color: rgb(255, 255, 255);  
+        font-size: 2.5rem;  
+        font-weight: 400;                
+        letter-spacing: .1rem;    
+        animation: text-sub 6.5s;       
+       
             &::before,
             &::after {
                 align-self: center;   
-                content: "";     
+                content: "";           
                 display: inline-block;
-                height: .1rem; 
-                background-color: currentColor; 
+                height: 2rem;  
+                transition: all .2s; 
             }
+             &::before { background-image: url(../../resources/images/icons/SVG/line-left.svg);}
+             &::after { background-image: url(../../resources/images/icons/SVG/line-right.svg);}
         
+            &:hover {
+
+                &::before {   
+                    transform: scaleX(1.2) translateX(-2rem); 
+                    cursor: pointer;
+            }
+            }
+            &:hover{ 
+                 &::after { 
+                transform: scaleX(1.2) translateX(2rem); 
+                cursor: pointer; 
+            }
+        }
+    
     }
    
  }    

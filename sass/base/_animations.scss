@@ -9,3 +9,35 @@
 //         background-image:url(../../resources/images/header-p3.jpg); 
 //     } 
 // }      
+  
+@keyframes text-main {
+    0% {
+        margin-bottom: -5rem;
+        opacity: 0;  
+    }       
+    55% {      
+        letter-spacing: 1rem;             
+        margin-bottom: -3rem;   
+        opacity: 0;
+    }
+    70% {
+        letter-spacing: 1.2rem;      
+        margin-bottom: -2rem;    
+    }  
+    100% {  
+        letter-spacing: .5rem ; 
+    }
+}
+
+
+@keyframes text-sub {
+    0% {      
+        opacity: 0;
+    } 
+    50% {            
+        opacity: 0;
+    } 
+    95% {    
+        opacity:1 ;
+    } 
+}
