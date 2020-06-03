@@ -355,8 +355,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   display: flex;
   transform: rotateY(-30deg);
   border-radius: 8px;
-  width: min-content;
-  transition: ease-in-out; }
+  width: min-content; }
 
 .location {
   font-size: 22px;
