@@ -25,7 +25,8 @@ body {
         in body selector */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  scroll-behavior: smooth; }
 
 .heading-primary {
   color: #fff;
@@ -355,7 +356,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   transform: rotateY(-30deg);
   border-radius: 8px;
   width: min-content;
-  transition: all ease; }
+  transition: all ease-out; }
 
 .location {
   font-size: 22px;
@@ -363,7 +364,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   width: 24vw;
   height: 23vw;
   transform: rotateY(30deg);
-  transition: all 10s ease-in; }
+  transition: all .1s ease-in; }
   .location__back--btn {
     margin-top: 1rem;
     background-image: linear-gradient(to right, #2775b4, #520909);

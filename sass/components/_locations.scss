@@ -20,7 +20,7 @@
     transform: rotateY(-30deg); 
     border-radius: 8px;
     width: min-content;
-    transition: all ease;    
+    transition: all .1s ease-out;     
 }
 
 .location{ 
@@ -29,7 +29,7 @@
     width: 24vw;  
     height: 23vw;           
     transform: rotateY(30deg); 
-    transition: all 10s ease-in;  
+    transition: all .1s ease-in;  
 
     &__back--btn {
         margin-top: 1rem; 
