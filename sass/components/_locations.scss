@@ -22,17 +22,21 @@
     display: flex;    
     transform: rotateY(-30deg); 
     border-radius: 8px;
-    width: min-content;
-    transition: all .1s ease-out;     
-}
+    width: min-content;         
+}  
 
 .location{ 
     font-size: 24px;
     box-shadow: 0px 0px 20px #999;
     width: 26vw;  
     height: 25vw;           
+    width: 21vw;    
+    height: 21vw;   
+    min-width: 20rem;  
+    min-height: 20rem;  
     transform: rotateY(30deg); 
     transition: all .1s ease-in;  
+    filter: blur(1.1) brightness(110%);
 
     &__back--btn {
         margin-top: 1.5rem; 
@@ -95,7 +99,7 @@
 
     &__caption--back{ 
         position: absolute; 
-        width: 21vw;                           
+        width: 21vw;                            
         top: 30%; 
         left: 50%;     
         transform: translate(-50%,20%); 
