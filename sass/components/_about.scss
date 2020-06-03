@@ -1,0 +1,38 @@
+.section-about {
+
+    text-align: center;   
+
+    &__heading {
+       border-bottom: .2px solid  rgba(20, 9, 68, 0.952);      
+       margin-bottom: 4rem;      
+       display: inline-block;    
+       //here the border bttom comes on commingnto section
+
+       @include respond(tab-port) {
+           margin-bottom: 1rem;       
+       }
+    }  
+}         
+ 
+.about {
+    display: grid;    
+    grid-template-columns: repeat(2,50%);  
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;  
+      }
+    
+    & > * { margin: 3rem; }
+
+    &__content-detail {
+            text-align: start; 
+            margin-bottom: 2rem;                    
+            
+            h3 {        
+                display: inline-block;
+                font-size: 3rem;         
+                margin-bottom: 1rem;             
+            }
+    } 
+
+}         

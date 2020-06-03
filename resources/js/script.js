@@ -3,19 +3,19 @@
 $(document).ready(function(){
      
     $('#location--4').mouseover(function(){ 
-        $(this).parent().animate({marginLeft:"-20vw"},1200);
+        $(this).parent().animate({marginLeft:"-30vw"},600); 
     });
     $('#location--5').mouseover(function(){ 
-        $(this).parent().animate({marginLeft:"-20vw"},1200); 
-    }); 
+        $(this).parent().animate({marginLeft:"-30vw"},600); 
+    });  
     $('#location--3').mouseover(function(){
-        $(this).parent().animate({marginLeft:"0px"},1200);  
+        $(this).parent().animate({marginLeft:"0px"},600);  
     }); 
     $('#location--2').mouseover(function(){
-        $(this).parent().animate({marginLeft:"0px"},1200);  
+        $(this).parent().animate({marginLeft:"0px"},600);  
     });
     $('#location--1').mouseover(function(){
-        $(this).parent().animate({marginLeft:"0px"},1200);  
-    });
+        $(this).parent().animate({marginLeft:"0px"},600);     
+    });   
      
 });

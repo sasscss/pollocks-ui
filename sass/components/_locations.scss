@@ -1,32 +1,60 @@
-
 .section-locations{
     
     perspective: 3500px;      
-    text-align: center;     
+    text-align: end;       
         &__heading  {
+            display: block;
+            margin-right: 8vw;        
            margin-bottom: 8rem;    
         }  
 
-    } 
-.locations{
-    margin-left: -5rem; 
-    display: flex; 
+} 
+.locations{ 
+    display: flex;    
     transform: rotateY(-30deg); 
     border-radius: 8px;
     width: min-content;
-    transition: all ease;
-    
+    transition: all ease;    
 }
 
 .location{ 
     font-size: 22px;
     box-shadow: 0px 0px 20px #999;
-    width: 23vw;  
-    height: 23vw;          
+    width: 24vw;  
+    height: 23vw;           
     transform: rotateY(30deg);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../../resources/images/section-2.jpg);
-    transition: all .5s;  
- 
+    transition: all 10s ease-in;             
+
+    &--1 {
+        background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url(../../resources/images/l1.jpg);
+        background-size: cover; 
+        background-position: top; 
+    }
+    &--2 {
+        background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url(../../resources/images/l2.jpg);
+        background-size: cover; 
+        background-position: top; 
+    }
+    &--3 {
+        background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url(../../resources/images/l3.jpg);
+        background-size: cover; 
+        background-position: top; 
+    }
+    &--4 {
+        background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url(../../resources/images/l1.jpg);
+        background-size: cover; 
+        background-position: top; 
+    }
+    &--5 {
+        background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url(../../resources/images/l2.jpg);
+        background-size: cover; 
+        background-position: top;     
+    }
            
     &__caption--front { 
         position: absolute; 
