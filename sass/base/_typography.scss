@@ -6,6 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
+    scroll-behavior: smooth;
   }
 
    
@@ -19,7 +20,12 @@ body {
         font-size: 6rem;           
         font-weight: 400;      
         letter-spacing: .5rem;   
-        animation-name: moveInLeft 2s ease-In;
+        animation-name: moveInLeft 2s ease-In;  
+ 
+        @media only screen and (max-width: 82em) {      
+            font-size: 5rem;             
+
+        } 
       
     }
     

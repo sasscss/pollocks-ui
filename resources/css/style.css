@@ -37,6 +37,9 @@ body {
     font-weight: 400;
     letter-spacing: .5rem;
     animation-name: moveInLeft 2s ease-In; }
+    @media only screen and (max-width: 82em) {
+      .heading-primary--main {
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
