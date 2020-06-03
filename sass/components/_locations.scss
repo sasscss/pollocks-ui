@@ -1,12 +1,18 @@
 .section-locations{
     
     perspective: 3500px;      
-    text-align: end;       
+    text-align: end;    
+
         &__heading  {
             display: block;
             margin-right: 8vw;        
            margin-bottom: 8rem;    
         }  
+
+        &__btn-show-all {
+            margin: 9rem 12vh 0 auto; 
+            font-size: 2rem;           
+        }
 
 } 
 .locations{ 
@@ -22,8 +28,19 @@
     box-shadow: 0px 0px 20px #999;
     width: 24vw;  
     height: 23vw;           
-    transform: rotateY(30deg);
-    transition: all 10s ease-in;             
+    transform: rotateY(30deg); 
+    transition: all 10s ease-in;  
+
+    &__back--btn {
+        margin-top: 1rem; 
+        background-image: linear-gradient(to right,rgb(39, 117, 180),rgb(82, 9, 9)); 
+        transform: rotateY(40deg);
+
+        &:hover  {
+            background-image: linear-gradient(to left,rgb(39, 117, 180),rgb(82, 9, 9)); 
+   
+        }
+     }  
 
     &--1 {
         background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -39,7 +56,7 @@
     }
     &--3 {
         background-image: linear-gradient(to bottom right , rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                        url(../../resources/images/l3.jpg);
+                        url(../../resources/images/l4.jpg);
         background-size: cover; 
         background-position: top; 
     }
@@ -63,7 +80,8 @@
         left: 50%;     
         transform: translate(-50%,20%);
         color: white;  
-        text-transform: uppercase;       
+        text-transform: uppercase;  
+        letter-spacing: 2px;        
         font-size: 2rem;
         font-weight: 700;  
         text-align: center; 
