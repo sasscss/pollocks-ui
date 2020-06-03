@@ -1,3 +1,5 @@
+
+
 .section-locations{
     
     perspective: 3500px;      
@@ -6,7 +8,8 @@
         &__heading  {
             display: block;
             margin-right: 8vw;        
-           margin-bottom: 6rem;       
+           margin-bottom: 6rem;
+           background-color: #002447;       
         }  
 
         &__btn-show-all {
@@ -24,20 +27,20 @@
 }
 
 .location{ 
-    font-size: 22px;
+    font-size: 24px;
     box-shadow: 0px 0px 20px #999;
-    width: 24vw;  
-    height: 23vw;           
+    width: 26vw;  
+    height: 25vw;           
     transform: rotateY(30deg); 
     transition: all .1s ease-in;  
 
     &__back--btn {
-        margin-top: 1rem; 
-        background-image: linear-gradient(to right,rgb(39, 117, 180),rgb(82, 9, 9)); 
+        margin-top: 1.5rem; 
+        background-image: linear-gradient(to right,#002447,#feb249); 
         transform: rotateY(40deg);
 
         &:hover  {
-            background-image: linear-gradient(to left,rgb(39, 117, 180),rgb(82, 9, 9)); 
+            background-image: linear-gradient(to left,#00172e,#855819); 
    
         }
      }  
@@ -109,7 +112,7 @@
 
     &:hover{
         cursor: pointer;
-        background-image: linear-gradient(to bottom right,rgb(118, 93, 228),rgb(2, 3, 63));
+        background-image: linear-gradient(to bottom right,#b73239,#8b0000);
     }
  
     &:hover &__caption--front  {

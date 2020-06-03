@@ -1,10 +1,21 @@
+.div{
+    background-image: linear-gradient(100deg,#feb249 45%,rgba(255,255,255,0) 72%);
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    margin-top: -7rem;
+    height: 65rem;
+    margin-bottom: -9rem;
+}
+
+
 .section-about {
 
     text-align: center;   
 
     &__heading {
        border-bottom: .2px solid  rgba(20, 9, 68, 0.952);      
-       margin-bottom: 4rem;      
+       margin-bottom: 4rem; 
+       background-image: linear-gradient(to right, #002447, #feb249);     
        display: inline-block;    
        //here the border bttom comes on commingnto section
 
@@ -31,7 +42,8 @@
             h3 {        
                 display: inline-block;
                 font-size: 3rem;         
-                margin-bottom: 1rem;             
+                margin-bottom: 1.3rem;  
+                color: #002447;           
             }
     } 
 

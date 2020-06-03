@@ -51,9 +51,9 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
-  word-spacing: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  word-spacing: 0.8rem;
   display: inline-block;
   background-image: linear-gradient(to right, #8b2257, rgba(20, 9, 68, 0.952));
   background-clip: text;
@@ -264,11 +264,20 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .rdd {
   height: 100vh; }
 
+.div {
+  background-image: linear-gradient(100deg, #feb249 45%, rgba(255, 255, 255, 0) 72%);
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  margin-top: -7rem;
+  height: 65rem;
+  margin-bottom: -9rem; }
+
 .section-about {
   text-align: center; }
   .section-about__heading {
     border-bottom: 0.2px solid rgba(20, 9, 68, 0.952);
     margin-bottom: 4rem;
+    background-image: linear-gradient(to right, #002447, #feb249);
     display: inline-block; }
     @media only screen and (max-width: 68.5em) {
       .section-about__heading {
@@ -288,7 +297,8 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     .about__content-detail h3 {
       display: inline-block;
       font-size: 3rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 1.3rem;
+      color: #002447; }
 
 .composition {
   position: relative;
@@ -346,7 +356,8 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   .section-locations__heading {
     display: block;
     margin-right: 8vw;
-    margin-bottom: 6rem; }
+    margin-bottom: 6rem;
+    background-color: #002447; }
   .section-locations__btn-show-all {
     margin: 9rem 12vh 0 auto;
     font-size: 2rem; }
@@ -356,21 +367,21 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   transform: rotateY(-30deg);
   border-radius: 8px;
   width: min-content;
-  transition: all ease-out; }
+  transition: all .1s ease-out; }
 
 .location {
-  font-size: 22px;
+  font-size: 24px;
   box-shadow: 0px 0px 20px #999;
-  width: 24vw;
-  height: 23vw;
+  width: 26vw;
+  height: 25vw;
   transform: rotateY(30deg);
   transition: all .1s ease-in; }
   .location__back--btn {
-    margin-top: 1rem;
-    background-image: linear-gradient(to right, #2775b4, #520909);
+    margin-top: 1.5rem;
+    background-image: linear-gradient(to right, #002447, #feb249);
     transform: rotateY(40deg); }
     .location__back--btn:hover {
-      background-image: linear-gradient(to left, #2775b4, #520909); }
+      background-image: linear-gradient(to left, #00172e, #855819); }
   .location--1 {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../resources/images/l1.jpg);
     background-size: cover;
@@ -423,7 +434,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     transition: all .1s; }
   .location:hover {
     cursor: pointer;
-    background-image: linear-gradient(to bottom right, #765de4, #02033f); }
+    background-image: linear-gradient(to bottom right, #b73239, #8b0000); }
   .location:hover .location__caption--front {
     opacity: 0; }
   .location:hover .location__caption--back {
@@ -472,7 +483,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     animation: pulsate 1s infinite; }
 
 .btn-basic {
-  color: currentColor;
+  color: #002447;
   border: none;
   border-bottom: 1px solid currentColor;
   cursor: pointer;
@@ -485,7 +496,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     margin-left: .5rem;
     transition: margin-left .2s; }
   .btn-basic:hover {
-    color: #a7a551;
+    color: #feb249;
     transform: scale(1.1); }
   .btn-basic:hover span {
     margin-left: 1.2rem; }

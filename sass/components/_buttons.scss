@@ -51,7 +51,7 @@
 
 
 .btn-basic {
-    color: currentColor;     
+    color: #002447;     
     border: none;      
     border-bottom: 1px solid currentColor;  // current color ... so that we have common color for both text and the border
     cursor: pointer;
@@ -67,7 +67,7 @@
     }
 
     &:hover { 
-        color: rgb(167, 165, 81); 
+        color: #feb249;
         transform: scale(1.1);        
     }                     
 
