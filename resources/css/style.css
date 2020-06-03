@@ -342,7 +342,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   .section-locations__heading {
     display: block;
     margin-right: 8vw;
-    margin-bottom: 8rem; }
+    margin-bottom: 6rem; }
   .section-locations__btn-show-all {
     margin: 9rem 12vh 0 auto;
     font-size: 2rem; }
