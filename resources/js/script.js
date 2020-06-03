@@ -3,10 +3,10 @@
 $(document).ready(function(){
      
     // $('#location--4').mouseover(function(){ 
-    //     $(this).parent().animate({marginLeft:"-20vw"},500); 
+    //     $(this).parent().animate({marginLeft:"-19vw"},500); 
     // }); 
     $('#location--5').mouseover(function(){ 
-        $(this).parent().animate({marginLeft:"-20vw"},500);   
+        $(this).parent().animate({marginLeft:"-19vw"},500);   
      });  
     // $('#location--3').mouseover(function(){
     //     $(this).parent().animate({marginLeft:"0px"},500);  
