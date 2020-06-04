@@ -596,35 +596,45 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   margin: 15rem auto;
   justify-content: space-around; }
 
-.newsfeed__smallcontainer--1,
-.newsfeed__smallcontainer--2,
-.newsfeed__smallcontainer--3 {
+.newsfeed__smallcontainer {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-  .newsfeed__smallcontainer--1 figure,
-  .newsfeed__smallcontainer--2 figure,
-  .newsfeed__smallcontainer--3 figure {
-    height: 15rem;
-    width: 15rem; }
+  justify-content: space-between;
+  justify-items: center;
+  width: 60%; }
 
 .newsfeed__smallcontainer--1 {
   background-color: #feb249;
   margin-left: 4rem; }
+  .newsfeed__smallcontainer--1 figure {
+    height: 18rem;
+    width: 18rem; }
 
 .newsfeed__smallcontainer--2 {
-  background-color: #7e1616 git; }
+  background-color: #7e1616; }
+  .newsfeed__smallcontainer--2 figure {
+    height: 18rem;
+    width: 18rem; }
+
+.newsfeed__smallcontainer--3 {
+  background-color: #266340; }
+  .newsfeed__smallcontainer--3 figure {
+    height: 18rem;
+    width: 18rem; }
 
 .smallcontainer__img {
   height: 100%;
   width: 100%; }
+
+.newssmall__container--1__p {
+  width: 50%; }
 
 .newsfeed__bigcontainer {
   display: flex;
   width: 40%; }
 
 .newsfeed__bigcontainer__news {
-  width: 50%;
+  width: 32rem;
   height: 40rem;
   border-top: 5px solid #002447;
   border-bottom: 5px solid #002447;
@@ -649,6 +659,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     background-color: #002447; }
 
 .newsfeed__bigcontainer__img {
+  width: 32rem;
   position: relative;
   background-image: linear-gradient(#002447 0%, rgba(0, 36, 71, 0.5) 50%, #002447 100%), url(../../resources/images/l2.jpg);
   width: 50%;
@@ -661,7 +672,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     height: 10%;
     position: absolute;
     bottom: 0;
-    left: -111%;
+    left: -112%;
     background-color: #002447; }
 
 .newsbig__h3 {
@@ -674,7 +685,8 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 
 .newsbig__p {
   position: absolute;
-  top: 16rem;
+  top: 15rem;
   left: -3rem;
   color: #002447;
-  padding-right: 3.5rem; }
+  padding-right: 3.5rem;
+  font-weight: 700; }
