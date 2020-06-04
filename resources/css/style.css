@@ -609,13 +609,11 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     width: 15rem; }
 
 .newsfeed__smallcontainer--1 {
-  border-top: 5px solid #feb249;
-  border-bottom: 5px solid #feb249;
+  background-color: #feb249;
   margin-left: 4rem; }
 
 .newsfeed__smallcontainer--2 {
-  border-top: 5px solid #7e1616;
-  border-bottom: 5px solid #7e1616; }
+  background-color: #7e1616 git; }
 
 .smallcontainer__img {
   height: 100%;
