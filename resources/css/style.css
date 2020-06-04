@@ -507,3 +507,65 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   .btn-basic:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  margin-top: -15rem; }
+  .main__container:not(:last-child) {
+    margin-right: 2rem; }
+
+.container {
+  width: 32rem;
+  height: 42rem;
+  margin-right: 3rem;
+  box-shadow: 3px 5px 10px black; }
+
+.container:hover .container__content {
+  background-image: radial-gradient(#feb249, transparent); }
+
+.container--4 {
+  margin-right: 0; }
+
+.container__content {
+  color: #002447;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  padding: 1rem;
+  align-content: space-between; }
+  .container__content h2 {
+    flex: 1; }
+  .container__content p {
+    border-top: 1px solid #002447;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: .5rem;
+    color: #5f0909; }
+
+.container__img {
+  width: 100%;
+  height: 70%; }
+
+.container__img--1 {
+  width: 100%;
+  height: 100%; }
+
+.academics__link {
+  text-decoration: none; }
+
+.color {
+  height: 40rem;
+  width: 90vw;
+  background-color: #002447;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -10rem; }
+  .color h2 {
+    padding-top: 8.5rem;
+    margin-bottom: 1rem;
+    color: #feb249; }
+  .color h1 {
+    font-size: 4rem;
+    color: #feb249;
+    margin-bottom: 1rem; }
