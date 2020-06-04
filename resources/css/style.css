@@ -556,7 +556,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 
 .color {
   height: 40rem;
-  width: 90vw;
+  width: 100v;
   background-color: #002447;
   margin: 0 auto;
   text-align: center;
