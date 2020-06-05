@@ -28,11 +28,11 @@
     }
 }
 
-.acadamics__card{
+.acadamics__card{ 
     width: 19vw;     
     height: 24vw;  
-    
-    margin: 2rem;      
+      
+    margin-right: 2rem;      
     min-width: 25rem;  
     min-height: 38rem;  
     padding-bottom: .5rem;      
@@ -41,6 +41,7 @@
     box-shadow: 3px 5px 10px black;
     border: 3px solid #fff;
     overflow: hidden; 
+    backface-visibility: hidden;   
     &__content{
         color:#002447;
         display: flex;

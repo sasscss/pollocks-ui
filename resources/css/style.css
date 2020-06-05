@@ -101,6 +101,10 @@ body {
   grid-template-rows: min-content 1fr  min-content min-content min-content 1fr;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
+  @media only screen and (max-width: 60em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   .header__logo-container {
     background-color: rgba(255, 255, 255, 0.8);
     filter: brightness(80%);
@@ -252,7 +256,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-about {
   margin-top: -10rem;
   margin-bottom: 5rem;
-  padding: 12rem 2rem 5vw 2rem;
+  padding: 13rem 3rem 5vw 5rem;
   background-image: linear-gradient(105deg, #feb249 45%, rgba(255, 255, 255, 0) 72%);
   background-size: cover;
   overflow: hidden; }
@@ -534,7 +538,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .acadamics__card {
   width: 19vw;
   height: 24vw;
-  margin: 2rem;
+  margin-right: 2rem;
   min-width: 25rem;
   min-height: 38rem;
   padding-bottom: .5rem;
@@ -542,7 +546,8 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   background-color: #fff;
   box-shadow: 3px 5px 10px black;
   border: 3px solid #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  backface-visibility: hidden; }
   .acadamics__card__content {
     color: #002447;
     display: flex;
