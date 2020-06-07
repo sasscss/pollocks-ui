@@ -6,16 +6,16 @@ $(document).ready(function(){
     //     $(this).parent().animate({marginLeft:"-19vw"},500); 
     // }); 
     $('#location--5').mouseover(function(){ 
-        $(this).parent().animate({marginLeft:"-19vw"},280);     
+        $(this).parent().animate({marginLeft:"-19vw"},300);       
      });  
     // $('#location--3').mouseover(function(){
     //     $(this).parent().animate({marginLeft:"0px"},500);  
     // }); 
     $('#location--2').mouseover(function(){
-        $(this).parent().animate({marginLeft:"0px"},280);  
+        $(this).parent().animate({marginLeft:"0px"},300);  
     });
     $('#location--1').mouseover(function(){
-        $(this).parent().animate({marginLeft:"0px"},280);     
+        $(this).parent().animate({marginLeft:"0px"},300);     
     });    
        
 });

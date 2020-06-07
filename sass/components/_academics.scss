@@ -37,9 +37,10 @@
     margin-bottom: 3rem; 
     background-color: #fff; 
     box-shadow: 3px 5px 10px black;
-    border: 3px solid #fff;
+    border: 3px solid #fff;  
     overflow: hidden; 
     backface-visibility: hidden;   
+    border:1rem solid transparent;  
     &__content{
         color:#002447;
         display: flex;

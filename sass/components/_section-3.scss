@@ -1,0 +1,53 @@
+.section-3{
+
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7)),url(../img/house-6.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    padding: 4rem;
+
+}
+
+.section-3__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-3__h4{
+    font-size: 3rem;
+    color: white;
+    //margin-bottom: .5rem;
+    font-weight: 300;
+
+}
+
+.section-3__h2{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    position: relative;
+    transition: all 3s ease-in-out;
+    //justify-self: flex-start;
+
+
+}
+.span-l{
+    svg{
+        height: 2rem;
+        width: 6rem;
+        fill: white;
+    }
+}
+
+.section-3__p{
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2rem;
+    text-align: center;
+}
