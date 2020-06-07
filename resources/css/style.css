@@ -705,6 +705,9 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     @media only screen and (max-width: 80.4em) {
       .section-newsfeed .newsfeed__bigcontainer p span {
         display: none; } }
+    @media only screen and (max-width: 53.75em) {
+      .section-newsfeed .newsfeed__bigcontainer p span {
+        display: inline; } }
 
 .section-newsfeed img {
   margin: auto 0;

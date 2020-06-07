@@ -133,7 +133,6 @@
         }       
         p{
             position: absolute;
-            
             top: 10rem;                                       
             left: -3rem;
             color: #002447;                    
@@ -141,18 +140,18 @@
             font-weight: 700;
             width: 95%;    
             background-color: #8DB6D2;
-            padding: 1rem 0;    
-  
+            padding: 1rem 0;      
 
             @media only screen and (max-width: 80.4em) {  
-                
-                span {
-                    display: none; 
-                }                        
-            }    
+                span { display: none; }                        
+            }   
 
+            @media only screen and (max-width: 53.75em) {   
+                span { display: inline; }                        
+            }   
+           
         }
-         
+                   
     }
        
     img{    
