@@ -23,7 +23,9 @@
     #002447 0%,
     #002447 60%,        
     #fff 55%);      
-         
+    margin-top: -8rem;
+    padding: 8rem;         
+    overflow: hidden;  
     @media only screen and (max-width: 60em) {        
         background-image: linear-gradient(to bottom, #002447,  #002447 );
     }   
@@ -32,10 +34,11 @@
 .section-newsfeed{       
     background-color: #8DB6D2;  
     padding: 4rem 0;                        
-
+    
+    overflow: hidden;  
 }
          
-.rdd {  
+.rdd {      
     height: 100vh; 
 
 }

@@ -4,6 +4,12 @@
     &__checkbox {
         visibility: hidden;
     }
+
+    &__logo {
+        height: 11rem;  
+        margin-left: 5rem;                      
+        display: block; 
+    }       
  
     &__button {
         background-color:#fff;   
@@ -48,33 +54,32 @@
        
     }
   
-    &__nav {
-        height: 0vh;
-        width: 100%;
-        position: fixed; 
-        top: 0; 
-        left: 0; //if it is right the nav list enters from right 
-        background-image: linear-gradient(rgba(32, 24, 24, 0.9),rgba(15, 8, 8, 0.9)),url(../../resources/images/navigation-bg.jpg);   
-
+    &__nav {  
+        position: fixed;         
+        top: 0;    
+        right: 0; //if it is right the nav list enters from right 
+                   
+           
+          background-image: linear-gradient(rgba(240, 255, 240, 0.925),	#F0FFF0);  
+         -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
         z-index: 1500;
-        opacity: 0;
-        width: 100vw;  // the width increases form 0  to 100 on animation
-        transition: all .8s cubic-bezier(1,.04,.44,1.25);
-
-       
+        opacity: 0;        
+        height: 100vh; 
+        width: 0;  // the width increases form 0  to 100 on animation
+        transition: all .8s linear; 
+        
     } 
-
-    &__list {
-        position: absolute;
-        top: 50%;
-        left: 50%; 
-        transform: translate(-20%,-50%);   
+   
+    &__list {       
+        display: block;               
         list-style: none;
-        width: 100%;
+        transform: translate(15%,20vh);                    
+
     }
   
-    &__item {
-        margin: 1rem;   
+    &__item {  
+        margin:2rem;    
     }
 
     &__link {
@@ -84,36 +89,43 @@
             //inline-blocks consideres both its padding and inside content  
             display: inline-block;
             text-decoration: none;
-            font-size: 3rem;
+            font-size: 2.5rem;      
             font-weight: 300; 
             padding: .3rem 2rem;    
-            color: rgb(119, 112, 112);
+            color: rgb(40, 17, 59); 
             text-transform: uppercase;
-            background-image: linear-gradient(130deg ,transparent 0%,transparent 50%,  white 50%);
-            background-size: 230%; 
-            transition: all .3s;
+           // background-image: linear-gradient(130deg ,transparent 0%,transparent 50%,  white 50%);
+          //  background-size: 230%; 
+            transition: all .3s; 
 
-            span {
-                margin-right: 1rem;  
-            }
+            span {  
+                margin-right: 1rem;       
+            }  
         }
 
         &:hover,  
         &:active {
-            border-bottom: .5rem solid cornsilk; 
+            border-bottom: .5rem solid rgb(14, 3, 39); 
             transform: translateX(2.5rem);   
-            color: #fff;      
-        }
+            color: rgb(40, 17, 59);       
+        } 
     }
 
-    &__checkbox:checked ~ &__background {
-        transform: scale(80);
-    }
+    // &__checkbox:checked ~ &__background {
+    //   //  transform: scale(80);
+    //   top: 4rem; 
+    //   right: 10rem; 
+    //   width: 10rem;    
+    //   height: 100vh; 
+   
+    // }
     &__checkbox:checked ~ &__nav {
         opacity: 1;
-        visibility: visible;
+        visibility: visible;  
         height: 100vh; 
+        width:38rem;                  
     }
+       
 
 
     //Icon

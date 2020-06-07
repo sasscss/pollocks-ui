@@ -15,9 +15,6 @@ html {
       16px so , 16px as 100% then 10px is 62.5% */
   font-size: 62.5%;
   /* 10px */ }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -146,6 +143,10 @@ body {
   height: 0; }
   .navigation__checkbox {
     visibility: hidden; }
+  .navigation__logo {
+    height: 11rem;
+    margin-left: 5rem;
+    display: block; }
   .navigation__button {
     background-color: #fff;
     height: 5rem;
@@ -168,48 +169,43 @@ body {
     z-index: 1000;
     transition: transform .8s; }
   .navigation__nav {
-    height: 0vh;
-    width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
-    background-image: linear-gradient(rgba(32, 24, 24, 0.9), rgba(15, 8, 8, 0.9)), url(../../resources/images/navigation-bg.jpg);
+    right: 0;
+    background-image: linear-gradient(rgba(240, 255, 240, 0.925), #F0FFF0);
+    -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
     z-index: 1500;
     opacity: 0;
-    width: 100vw;
-    transition: all 0.8s cubic-bezier(1, 0.04, 0.44, 1.25); }
+    height: 100vh;
+    width: 0;
+    transition: all .8s linear; }
   .navigation__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-20%, -50%);
+    display: block;
     list-style: none;
-    width: 100%; }
+    transform: translate(15%, 20vh); }
   .navigation__item {
-    margin: 1rem; }
+    margin: 2rem; }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;
     padding: .3rem 2rem;
-    color: #777070;
+    color: #28113b;
     text-transform: uppercase;
-    background-image: linear-gradient(130deg, transparent 0%, transparent 50%, white 50%);
-    background-size: 230%;
     transition: all .3s; }
     .navigation__link:link span, .navigation__link:visited span {
       margin-right: 1rem; }
   .navigation__link:hover, .navigation__link:active {
-    border-bottom: .5rem solid cornsilk;
+    border-bottom: 0.5rem solid #0e0327;
     transform: translateX(2.5rem);
-    color: #fff; }
-  .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(80); }
+    color: #28113b; }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     visibility: visible;
-    height: 100vh; }
+    height: 100vh;
+    width: 38rem; }
   .navigation__icon {
     position: relative;
     margin-top: 2.6rem; }
@@ -271,14 +267,18 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 
 .section-academics {
   padding-bottom: 2rem;
-  background-image: linear-gradient(to bottom, #002447 0%, #002447 60%, #fff 55%); }
+  background-image: linear-gradient(to bottom, #002447 0%, #002447 60%, #fff 55%);
+  margin-top: -8rem;
+  padding: 8rem;
+  overflow: hidden; }
   @media only screen and (max-width: 60em) {
     .section-academics {
       background-image: linear-gradient(to bottom, #002447, #002447); } }
 
 .section-newsfeed {
   background-color: #8DB6D2;
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  overflow: hidden; }
 
 .rdd {
   height: 100vh; }
