@@ -28,11 +28,11 @@
 .location{ 
     font-size: 24px;
     box-shadow: 0px 0px 20px #999;
-    width: 26vw;  
-    height: 25vw;           
+    width: 30vw;            
+    height: 25vw;                         
     width: 21vw;    
     height: 21vw;   
-    min-width: 20rem;  
+    min-width: 20rem;   
     min-height: 20rem;  
     transform: rotateY(30deg); 
     transition: all .1s ease-in;  
@@ -82,10 +82,11 @@
            
     &__caption--front { 
         position: absolute; 
+        padding: 0 2rem;       
         width: 21vw;                           
         top: 50%;
         left: 50%;     
-        transform: translate(-50%,20%);
+        transform: translate(-50%,-50%); 
         color: white;  
         text-transform: uppercase;  
         letter-spacing: 2px;        
@@ -98,11 +99,12 @@
     }
 
     &__caption--back{ 
-        position: absolute; 
+        position: absolute;                
         width: 21vw;                            
         top: 30%; 
         left: 50%;     
-        transform: translate(-50%,20%); 
+        transform: translate(-50%,0);  
+ 
            padding: 2rem; 
            color: white;  
            text-transform: uppercase;       

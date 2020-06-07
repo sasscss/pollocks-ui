@@ -20,9 +20,11 @@
     }   
     .btn--contact {   
         position: absolute;
-        letter-spacing: 1.5px;   
-        left: 1.5rem;       
-        top: 1rem;    
+        letter-spacing: 1.5px;  
+        font-weight: 700;   
+        font-size: large;       
+        left:5rem;                       
+        top: 1rem;     
         opacity: 1;   
         transition: all .3s;         
     }  

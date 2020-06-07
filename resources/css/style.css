@@ -354,7 +354,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
           left: 0;
           transform: scale(1.1); } }
     .composition__photo:hover {
-      outline: 1.1rem solid rgba(65, 8, 22, 0.95);
+      outline: 1.1rem solid #002447;
       transform: scale(1.03) translateY(-5px);
       box-shadow: 0rem 3rem 6rem rgba(0, 0, 0, 0.4);
       z-index: 20; }
@@ -382,7 +382,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .location {
   font-size: 24px;
   box-shadow: 0px 0px 20px #999;
-  width: 26vw;
+  width: 30vw;
   height: 25vw;
   width: 21vw;
   height: 21vw;
@@ -419,10 +419,11 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     background-position: top; }
   .location__caption--front {
     position: absolute;
+    padding: 0 2rem;
     width: 21vw;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -50%);
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -437,7 +438,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     width: 21vw;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 0);
     padding: 2rem;
     color: white;
     text-transform: uppercase;
@@ -479,7 +480,9 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   .btn-full .btn--contact {
     position: absolute;
     letter-spacing: 1.5px;
-    left: 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    left: 5rem;
     top: 1rem;
     opacity: 1;
     transition: all .3s; }
