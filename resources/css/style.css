@@ -546,6 +546,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .acadamics__card {
   width: 19vw;
   height: 24vw;
+  text-decoration: none;
   margin-right: 2rem;
   min-width: 25rem;
   min-height: 38rem;
@@ -599,9 +600,6 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     filter: blur(3px) brightness(65%); }
   .acadamics__card:hover .acadamics__card-img-caption {
     opacity: 1; }
-
-.academics__link {
-  text-decoration: none; }
 
 .section-newsfeed__heading {
   text-align: center;

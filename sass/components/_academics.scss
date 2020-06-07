@@ -29,7 +29,7 @@
 .acadamics__card{ 
     width: 19vw;     
     height: 24vw;  
-      
+    text-decoration: none; 
     margin-right: 2rem;      
     min-width: 25rem;  
     min-height: 38rem;  
@@ -96,7 +96,4 @@
         opacity: 1; 
     }
 
-}
-.academics__link{
-    text-decoration: none;
-}
+}    
