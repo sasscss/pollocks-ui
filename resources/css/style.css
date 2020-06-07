@@ -37,7 +37,7 @@ body {
   backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 5.6rem;
     font-weight: 400;
     letter-spacing: .5rem;
     animation-name: moveInLeft 2s ease-In; }
@@ -393,10 +393,10 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   filter: blur(1.1) brightness(110%); }
   .location__back--btn {
     margin-top: 1.5rem;
-    background-image: linear-gradient(to right, #002447, #feb249);
+    background-image: linear-gradient(45deg, #002447, #8b0000, #002447);
     transform: rotateY(40deg); }
     .location__back--btn:hover {
-      background-image: linear-gradient(to left, #00172e, #855819); }
+      background-image: linear-gradient(135deg, #002447, #8b0000, #002447); }
   .location--1 {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../resources/images/l1.jpg);
     background-size: cover;
@@ -472,6 +472,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   position: relative; }
   .btn-full .btn--join {
     position: absolute;
+    font-weight: 700;
     letter-spacing: 1.5px;
     left: 1rem;
     top: -2rem;
