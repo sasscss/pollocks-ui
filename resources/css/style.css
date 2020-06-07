@@ -106,8 +106,8 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
   .header__logo-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    filter: brightness(80%);
+    background-color: rgba(255, 255, 255, 0.7);
+    filter: brightness(70%);
     margin: 3vh;
     justify-self: start;
     border-radius: 10px; }

@@ -16,13 +16,13 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }  
    &__logo-container {  
-       background-color: rgba(#fff, $alpha: .8);           
-       filter: brightness(80%);        
-       margin: 3vh;        
+       background-color: rgba(#fff, $alpha: .7);                       
+       filter: brightness(70%);          
+       margin: 3vh;          
        justify-self: start;   
        border-radius: 10px;  
 
-   }              
+   }                
 
    &__logo {  
         height: 4.8rem;    
