@@ -702,6 +702,9 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     width: 95%;
     background-color: #8DB6D2;
     padding: 1rem 0; }
+    @media only screen and (max-width: 80.4em) {
+      .section-newsfeed .newsfeed__bigcontainer p span {
+        display: none; } }
 
 .section-newsfeed img {
   margin: auto 0;

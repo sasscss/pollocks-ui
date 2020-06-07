@@ -19,7 +19,7 @@
         display: grid;                    
         grid-template-rows: min-content;               
         grid-template-columns: repeat(auto-fill,minmax(55rem, 1fr) ); 
-        align-items: stretch;            
+        align-items: stretch;             
         font-size: 1.5rem;   
 
         @media only screen and (max-width: 31.5em) {  
@@ -130,19 +130,27 @@
             background-color:#8DB6D2;                 
             text-transform: uppercase;
             padding: 1rem 0;      
-        }  
+        }       
         p{
             position: absolute;
             
-            top: 10rem;                        
+            top: 10rem;                                       
             left: -3rem;
-            color: #002447;  
+            color: #002447;                    
             padding-right: 3.5rem;
             font-weight: 700;
             width: 95%;    
             background-color: #8DB6D2;
             padding: 1rem 0;    
-            
+  
+
+            @media only screen and (max-width: 80.4em) {  
+                
+                span {
+                    display: none; 
+                }                        
+            }    
+
         }
          
     }
