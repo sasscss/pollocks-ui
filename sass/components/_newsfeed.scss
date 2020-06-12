@@ -32,7 +32,7 @@
         justify-self: center;
         position: relative;
         margin: 8rem 0 0 -10rem;
-        padding: 3rem 3rem 3rem 10rem;
+        padding: 3rem 3rem 3rem 12rem;
 
         &__button{
             height: 8rem;
@@ -54,7 +54,7 @@
     justify-self: center;
     align-self: center;
     &__image{
-        height: 40rem;
+        height: 35rem;
         width: 55%;
         background-image: url(../../resources/images/n4.jpg);
         background-repeat: no-repeat;
@@ -65,7 +65,7 @@
     &__news{ 
         font-size: 2rem;
         width: 45%; 
-        height: 40rem;
+        height: 35rem;
         border: 3px solid #9D2235;
         //z-index: 10;
         align-self: center;
