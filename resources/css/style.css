@@ -643,36 +643,38 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   margin: 1rem 3rem;
   justify-content: space-between;
   padding: .5rem;
-  width: 80%; }
+  width: 80%;
+  font-weight: 600; }
   .section-newsfeed .newsfeed__smallcontainer p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     width: 80%;
     color: white; }
     @media only screen and (max-width: 37.5em) {
       .section-newsfeed .newsfeed__smallcontainer p {
-        font-size: 1.3rem; } }
+        font-size: 1.4rem; } }
   .section-newsfeed .newsfeed__smallcontainer img {
     height: 100%;
-    width: 20%; }
+    width: 20rem; }
   .section-newsfeed .newsfeed__smallcontainer--1 {
     background-image: linear-gradient(to right, #ffffff00 0%, #feb249 30%, #feb249 100%);
-    grid-row: 1/ span 1;
-    grid-column: 1/ span 1; }
+    grid-row: 1/span 1;
+    grid-column: 1/span 1; }
   .section-newsfeed .newsfeed__smallcontainer--2 {
     background-image: linear-gradient(to left, #ffffff00 0%, #ffffff00 10%, #7e1616 50%, #7e1616 100%);
     grid-row: 2/ span 1;
-    grid-column: 1/ span 1; }
+    grid-column: 1/span 1; }
     .section-newsfeed .newsfeed__smallcontainer--2 img {
       margin-right: 2rem; }
   .section-newsfeed .newsfeed__smallcontainer--3 {
     background-image: linear-gradient(to right, #ffffff00 0%, #ffffff00 10%, #266340 50%, #266340 100%);
     grid-row: 3/ span 1;
-    grid-column: 1/ span 1; }
+    grid-column: 1/span 1; }
     .section-newsfeed .newsfeed__smallcontainer--3 img {
       margin-left: 2rem; }
 
 .section-newsfeed .newsfeed__bigcontainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-right: 2rem;
   max-height: 50rem; }
@@ -712,7 +714,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 
 .section-newsfeed img {
   margin: auto 0;
-  width: 25%; }
+  width: 50%; }
 
 .section-3 {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(../img/house-6.jpeg);
