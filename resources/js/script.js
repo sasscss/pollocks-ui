@@ -30,15 +30,15 @@ $(document).ready(function(){
     // js--wp-2-1 2nd sec 1st component
     $('.js--wp-2-1').waypoint(function(direction){
         $('.js--wp-2-1').addClass('animate__animated animate__fadeInRight');
-    },{  
-        offset:"75%"      
+    },{   
+        offset:"70%"           
     }); 
     
     // js--wp-2-1 2nd sec 2nd component    
     $('.js--wp-2-2').waypoint(function(direction){
         $('.js--wp-2-2').addClass('animate__animated animate__fadeIn');
     },{    
-        offset:"90%"            
+        offset:"95%"             
     }); 
 
     // js--wp-3-1 3rd sec 1st component        
