@@ -1,164 +1,95 @@
 .section-newsfeed{
     background-image: url(../../resources/images/001_paper_2872x2592_all-free-download.com.jpg); 
     background-size: cover;
-    &__heading{      
-            text-align: center;
-            padding: 3rem auto;  
-            margin-bottom: 3rem;   
-                        
-            h1{       
-                font-size: 4rem;             
-                margin-bottom: 1rem; 
-                color: #002447;
-            }
-            h2{ 
-                 margin-bottom: 1rem;  
-                color: #002447;
-            }  
-    }
-   
-    &__container {      
-        display: grid;                    
-        grid-template-rows: min-content;               
-        grid-template-columns: repeat(auto-fill,minmax(55rem, 1fr) ); 
-        align-items: stretch;             
-        font-size: 1.5rem;   
-
-        @media only screen and (max-width: 31.5em) {  
-           grid-template-columns: 1fr;                                    
-        }
+    display: flex;
+    flex-direction: column;
 } 
 
-  
-.newsfeed__smallcontainers { 
-    display: grid;    
-    padding: 1rem;        
-    grid-template-rows: repeat(3,1fr);
-    //grid-template-columns: repeat(10,10%);  
-    margin: auto 3rem;   
-    grid-row: 1 / span 1;           
-    grid-column: 1/ span 1;   
-     
-    @media only screen and (max-width: 46em) {   
-        margin: auto 2rem; 
-        padding: 0;                                           
-    }   
-          
-    
-}                
-
-.newsfeed__smallcontainer{ 
-    display: flex; 
-    align-items: center;   
-    margin:1rem 3rem;  
-    justify-content: space-between;  
-    padding: .5rem;  
-    width: 80%;
-    font-weight: 600;
-    
-    p {   
-        font-size: 1.5rem;         
-        width: 80%;     
-        color: white;   
-        @media only screen and (max-width: 37.5em) {  
-            font-size: 1.4rem;                                         
-        } 
-    }         
-
-    img{  
-        height: 100%;          
-        width: 20rem;      
-    }   
-
-    &--1{      
-        background-image: linear-gradient(to right,  
-        #ffffff00 0%,       
-        #feb249 30%,       
-        #feb249 100%);      
-        grid-row: 1/span 1;
-        grid-column: 1/span 1;
-    }
-
-    &--2{
-        background-image: linear-gradient(to left,    
-        #ffffff00 0%,
-        #ffffff00 10%,    
-        rgb(126, 22, 22) 50%, 
-        rgb(126, 22, 22) 100%); 
-        grid-row: 2/ span 1; 
-        grid-column: 1/span 1;
-    
-
-        img {margin-right: 2rem; }  
-    }
-
-    &--3{        
-        background-image: linear-gradient(to right,  
-        #ffffff00 0%,
-        #ffffff00 10%,    
-        rgb(38, 99, 64) 50%,         
-        rgb(38, 99, 64) 100%);     
-        grid-row: 3/ span 1;
-        
-        grid-column: 1/span 1;  
-
-        img {  margin-left: 2rem; }
-
-    } 
-    
-}
-.newsfeed__bigcontainer{  
-    display: flex; 
+.section-newsfeed__container__1{
+    max-width: 120rem;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;  
-    margin-right: 2rem;       
-    max-height: 50rem; 
-    @media only screen and (max-width: 43.75em) {  
-        display: none;                              
-    }               
-    &__news{      
-        min-width: 50%; 
-        min-height: 40rem;                
-        border: 5px solid #002447; 
-        position: relative;    
-    }       
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 5rem;
+    &__image{
+        height: 35rem;
+        width: 55%;
+        background-image: url(../../resources/images/n4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;  
+        margin-left: 8rem;
+    }
+    &__news{ 
+        font-size: 2rem;
+        width: 45%; 
+        height: 35rem;
+        border: 3px solid #9D2235;
+        //z-index: 10;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        margin: 8rem 0 0 -10rem;
+        padding: 3rem 3rem 3rem 10rem;
 
-        h3{
-            font-size: 2rem;     
+        &__button{
+            height: 8rem;
+            width: 10rem;
+            background-color: #9D2235;
             position: absolute;
-            left: -3rem;
-            top: 2rem;     
-            color: #002447;
-            background-color:#8DB6D2;                 
-            text-transform: uppercase;
-            padding: 1rem 0;      
-        }       
-        p{
-            position: absolute;
-            top: 10rem;                                       
-            left: -3rem;
-            color: #002447;                    
-            padding-right: 3.5rem;
-            font-weight: 700;
-            width: 95%;    
-            background-color: #8DB6D2;
-            padding: 1rem 0;      
+            left: 0;
+            bottom: 0;
+            border: none;
 
-            @media only screen and (max-width: 80.4em) {  
-                span { display: none; }                        
-            }   
-
-            @media only screen and (max-width: 53.75em) {   
-                span { display: inline; }                        
-            }   
-           
         }
-                   
     }
-       
-    img{    
-        margin: auto 0;    
-        width: 50%;                 
-                    
+
+}
+.section-newsfeed__container__2{
+    max-width: 120rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+    &__image{
+        height: 40rem;
+        width: 55%;
+        background-image: url(../../resources/images/n4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;  
     }
-}             
+    &__news{ 
+        font-size: 2rem;
+        width: 45%; 
+        height: 40rem;
+        border: 3px solid #9D2235;
+        //z-index: 10;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        margin: 8rem -10rem 0 8rem;
+        padding: 3rem 8rem 3rem 3rem; 
+
+        &__button{
+            height: 8rem;
+            width: 10rem;
+            background-color: #9D2235;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border: none;
+
+        }
+    }
+
+}
+
+  
+
+    
+    
+        
