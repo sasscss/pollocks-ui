@@ -19,6 +19,11 @@ html {
 body {
   box-sizing: border-box; }
 
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1; }
+
 body {
   /* we specify base font attributes in body as the font attributes inherit from parent 
         and body is on top of hirearchy and and all the child elements gets inherited with the properties declared 
@@ -36,8 +41,7 @@ body {
     display: block;
     font-size: 5.6rem;
     font-weight: 400;
-    letter-spacing: .5rem;
-    animation-name: moveInLeft 2s ease-In; }
+    letter-spacing: .5rem; }
     @media only screen and (max-width: 82em) {
       .heading-primary--main {
         font-size: 5rem; } }
@@ -45,8 +49,7 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 1.7rem;
-    animation: moveInRight 2s ease-out; }
+    letter-spacing: 1.7rem; }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -88,6 +91,110 @@ body {
   95% {
     opacity: 1; } }
 
+@keyframes card-fade-in-right {
+  0% {
+    transform: translate(-1rem, 1rem);
+    opacity: 0; }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+@keyframes card-fade-in-left {
+  0% {
+    transform: translate(1rem, 1rem);
+    opacity: 0; }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+@keyframes card-fade-in-up {
+  0% {
+    transform: translate(0rem, 1rem);
+    opacity: 0; }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1; } }
+
+.card-fade-in-left {
+  animation-name: card-fade-in-left; }
+
+.card-fade-in-right {
+  animation-name: card-fade-in-right; }
+
+.card-fade-in-up {
+  animation-name: card-fade-in-up; }
+
+.js--wp-1-1,
+.js--wp-1-2-1,
+.js--wp-1-2-2,
+.js--wp-1-2-3,
+.js--wp-2-1,
+.js--wp-2-2,
+.js--wp-3-1,
+.js--wp-3-2-1,
+.js--wp-3-2-2 {
+  opacity: 0; }
+
+.js--wp-1-1.animate__animated,
+.js--wp-1-2-1.animate__animated,
+.js--wp-1-2-2.animate__animated,
+.js--wp-1-2-3.animate__animated,
+.js--wp-2-1.animate__animated,
+.js--wp-2-2.animate__animated,
+.js--wp-3-1.animate__animated
+.js--wp-3-2-1.animate__animated,
+.js--wp-3-2-2.animate__animated {
+  opacity: 1; }
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/* Fading entrances  */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.animate__fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
 .header {
   height: 98vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../../resources/images/header-p3.jpg);
@@ -112,7 +219,7 @@ body {
     height: 4.8rem; }
   .header__text--main {
     justify-self: center;
-    animation: text-main 6.5s; }
+    animation: text-main 5.2s; }
   .header__text-seperator {
     display: grid;
     grid-template-columns: minmax(11rem, min-content) max-content minmax(12.5rem, min-content);
@@ -123,7 +230,7 @@ body {
     font-size: 2rem;
     font-weight: 100;
     letter-spacing: .1rem;
-    animation: text-sub 6.5s; }
+    animation: text-sub 5.2s; }
     .header__text-seperator::before, .header__text-seperator::after {
       align-self: center;
       content: "";
@@ -278,6 +385,13 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-newsfeed {
   background-color: #8DB6D2;
   padding: 4rem 0;
+  overflow: hidden; }
+
+.section-achivements {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../resources/images/accomplishments-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 3rem;
   overflow: hidden; }
 
 .rdd {
@@ -754,3 +868,20 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   color: white;
   line-height: 2rem;
   text-align: center; }
+
+.achivements {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white; }
+  .achivements__achivement {
+    text-align: center; }
+    .achivements__achivement:not(:last-child) {
+      margin-right: 3rem;
+      margin-bottom: 3rem; }
+  .achivements__number {
+    font-size: 7rem;
+    font-weight: 300; }
+  .achivements__discription {
+    font-size: 2rem; }

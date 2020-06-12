@@ -30,7 +30,7 @@
 
    &__text--main {
        justify-self: center; 
-       animation: text-main 6.5s; 
+       animation: text-main 5.2s;         
         
    }
 
@@ -44,8 +44,8 @@
        font-size: 2rem;    
        font-weight: 100;                         
        letter-spacing: .1rem;    
-       animation: text-sub 6.5s;       
-      
+       animation: text-sub 5.2s;             
+            
            &::before,
            &::after {
                align-self: center;   

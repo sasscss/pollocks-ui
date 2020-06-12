@@ -19,8 +19,7 @@ body {
         display: block;  
         font-size: 5.6rem;                 
         font-weight: 400;      
-        letter-spacing: .5rem;   
-        animation-name: moveInLeft 2s ease-In;  
+        letter-spacing: .5rem;     
  
         @media only screen and (max-width: 82em) {      
             font-size: 5rem;             
@@ -34,7 +33,6 @@ body {
         font-size: 2rem;
         font-weight: 400;
         letter-spacing: 1.7rem;
-        animation: moveInRight 2s ease-out;
     }
 }
 

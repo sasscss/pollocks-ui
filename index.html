@@ -27,6 +27,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/style.css">
+      
     <title>Pollocks School</title>
 </head>
 <body> 
@@ -65,8 +66,8 @@
             
         <h2 class="heading-secondary section-about__heading">Welcome to Pollocks School </h2>
         <div class="about"> 
-            <div class="about__content">     
-               <div class="about__content-detail">
+            <div class="about__content js--wp-1-1">     
+               <div class="about__content-detail ">
                     <h3> Our Values</h3>
                     <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nihil incidunt eum, vero consequuntur facere ullam soluta facilis voluptatibus
@@ -89,16 +90,16 @@
                 </div>                  
             </div>
             <div class="composition">
-                    <img  src="resources/images/c1.jpg" class="composition__photo composition__photo--p1" >
-                    <img  src="resources/images/c3.jpg" class="composition__photo composition__photo--p2" >
-                    <img  src="resources/images/c2.jpg" class="composition__photo composition__photo--p3" >
+                    <img  src="resources/images/c1.jpg" class="composition__photo composition__photo--p1  js--wp-1-2-1" >
+                    <img  src="resources/images/c3.jpg" class="composition__photo composition__photo--p2  js--wp-1-2-2" >
+                    <img  src="resources/images/c2.jpg" class="composition__photo composition__photo--p3  js--wp-1-2-3" >
             </div>   
         </div>
    </section>   
    <section class="section-locations"> 
-        <h2 class="heading-secondary section-locations__heading"> WE ARE LOCATED AT</h2>     
+        <h2 class="heading-secondary section-locations__heading js--wp-2-1"> WE ARE LOCATED AT</h2>     
 
-        <div class="locations" id="locations">
+        <div class="locations js--wp-2-2" id="locations">
             
             <figure class="location location--1" id="location--1">
                 <!-- <img src="resources/images/section-2.jpg" class="location__image"> -->
@@ -159,12 +160,12 @@
         <button class="btn-basic section-locations__btn-show-all">Show all <span> &rarr; </span></button>
     </section>
     <section class="section-academics">
-        <div class="section-academics__heading">
+        <div class="section-academics__heading js--wp-3-1">
             <h2 class="heading-primary">Explore Our</h2>
             <h1 class="heading-secondary">Academic Programs</h1>
         </div>
-        <div class="section-academics__cards">
-        <a href="#" class="acadamics__card">       
+        <div class="section-academics__cards">   
+        <a href="#" class="acadamics__card js--wp-3-2-1">       
             <figure  class="acadamics__card-img-container">
                 <img src="resources/images/a1.jpg" alt="img" class="acadamics__card-img">  
                 <figcaption class="acadamics__card-img-caption">EXPLORE NOW</figcaption>
@@ -175,7 +176,7 @@
                 <p>(infants to pre nursery)</p> 
             </div>
         </a>
-        <a href="#" class="acadamics__card">       
+        <a href="#" class="acadamics__card js--wp-3-2-1">       
             <figure  class="acadamics__card-img-container">
                 <img src="resources/images/a2.jpg" alt="img" class="acadamics__card-img">  
                 <figcaption class="acadamics__card-img-caption">EXPLORE NOW</figcaption>
@@ -186,7 +187,7 @@
                 <p>(Nursery to Grade 5)</p>
             </div>
         </a>
-        <a href="#" class="acadamics__card">       
+        <a href="#" class="acadamics__card js--wp-3-2-2">       
                 <figure  class="acadamics__card-img-container">
                     <img src="resources/images/a3.jpg" alt="img" class="acadamics__card-img">  
                     <figcaption class="acadamics__card-img-caption">EXPLORE NOW</figcaption>
@@ -194,10 +195,10 @@
                 <div class="acadamics__card__content">
                     <h2>IB Middle Years Programme (MYP)
                         </h2>
-                    <p>(Grade 6 to 10)</p>
+                    <p>(Grade 6 to 10)</p> 
                 </div>
         </a> 
-        <a href="#" class="acadamics__card"> 
+        <a href="#" class="acadamics__card js--wp-3-2-2"> 
                 <figure  class="acadamics__card-img-container">
                     <img src="resources/images/a4.jpg" alt="img" class="acadamics__card-img">   
                     <figcaption class="acadamics__card-img-caption">EXPLORE NOW</figcaption>
@@ -208,6 +209,26 @@
                     <p>(Grade 11 to 12)</p>
                 </div> 
         </a>
+    </section>
+    <section class="section-achivements">
+       <div class="achivements">
+        <div class="achivements__achivement">
+            <p class="counter achivements__number">50</p>
+            <p class="achivements__discription">Years</p>
+        </div>
+        <div class="achivements__achivement">
+            <p class="counter achivements__number">8</p>
+            <p class="achivements__discription">Locations</p>
+        </div>
+        <div class="achivements__achivement">
+            <p class="counter achivements__number">4000</p>
+            <p class="achivements__discription">students</p>
+        </div>
+        <div class="achivements__achivement">
+            <p class="achivements__number"><span class="counter">100</span>%</p> 
+            <p class="achivements__discription">Happiness</p>
+        </div>
+       </div>
     </section>
     <!-- <section class="section-3">
         <div class="section-3__content">
@@ -289,9 +310,12 @@
         <button class="btn-basic section-locations__btn-show-all">Read all <span> &rarr; </span></button>
 
     </section> -->
-   
+       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-    <!-- <script src="./vendors/js/jquery.waypoints.min.js"></script> -->
-   <script src="resources/js/script.js"></script>
+    
+    <script src="resources/js/script.js"></script>
+    
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/jquery.counterup.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+
+.achivements {              
+    display: flex;
+    justify-content: space-evenly;  
+    text-align: center;   
+    flex-wrap: wrap; 
+    color: white;  
+    
+       
+    &__achivement { 
+        text-align: center;     
+        &:not(:last-child) { 
+            margin-right: 3rem;
+            margin-bottom: 3rem; 
+        }   
+    }
+ 
+    &__number {
+        font-size: 7rem;  
+        font-weight: 300;  
+    }     
+    &__discription {
+        font-size: 2rem;        
+    }
+}  

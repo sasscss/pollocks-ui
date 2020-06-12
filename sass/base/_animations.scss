@@ -41,3 +41,141 @@
         opacity:1 ;
     } 
 }
+
+ 
+@keyframes card-fade-in-right {
+    0% {
+        transform: translate(-1rem,1rem);   
+      
+        opacity: 0;  
+    }  
+    100% {
+        transform: translate(0,0);        
+        opacity: 1;         
+    }       
+   
+}
+
+@keyframes card-fade-in-left {
+    0% {
+        transform: translate(1rem,1rem);   
+        opacity: 0;  
+    }  
+    100% {
+        transform: translate(0,0);    
+        opacity: 1;         
+    }       
+   
+}
+
+@keyframes card-fade-in-up {
+    0% {
+        transform: translate(0rem,1rem);   
+        opacity: 0;  
+    }  
+    100% {
+        transform: translate(0,0);    
+        opacity: 1;         
+    }       
+   
+}
+
+.card-fade-in-left {animation-name: card-fade-in-left;}
+
+.card-fade-in-right {  animation-name: card-fade-in-right;}  
+
+.card-fade-in-up {  animation-name: card-fade-in-up;}
+
+ 
+.js--wp-1-1, 
+.js--wp-1-2-1,    
+.js--wp-1-2-2,
+.js--wp-1-2-3, 
+.js--wp-2-1, 
+.js--wp-2-2,   
+.js--wp-3-1,  
+.js--wp-3-2-1, 
+.js--wp-3-2-2{  
+
+    opacity: 0;            
+}      
+
+.js--wp-1-1.animate__animated,  
+.js--wp-1-2-1.animate__animated,  
+.js--wp-1-2-2.animate__animated,
+.js--wp-1-2-3.animate__animated,  
+.js--wp-2-1.animate__animated,
+.js--wp-2-2.animate__animated,
+.js--wp-3-1.animate__animated
+.js--wp-3-2-1.animate__animated,
+.js--wp-3-2-2.animate__animated{   
+
+    opacity: 1;  
+} 
+
+
+
+  .animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+/* Fading entrances  */
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  .animate__fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  
+@-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate__fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
