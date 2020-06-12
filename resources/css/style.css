@@ -716,41 +716,57 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   margin: auto 0;
   width: 50%; }
 
-.section-3 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(../img/house-6.jpeg);
-  background-position: center;
-  background-attachment: fixed;
+.section-documents {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95) 45%, rgba(0, 0, 0, 0.6) 70%), url(../../resources/images/sectionimg.jpg);
+  height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
-  padding: 4rem; }
+  background-position: bottom;
+  background-attachment: fixed;
+  position: relative; }
 
-.section-3__container {
+.documents__container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.section-3__h4 {
-  font-size: 3rem;
-  color: white;
-  font-weight: 300; }
-
-.section-3__h2 {
-  font-size: 4rem;
-  color: white;
-  margin-bottom: 2rem;
-  font-weight: 400;
+  flex-wrap: wrap;
   position: relative;
-  transition: all 3s ease-in-out; }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 3rem; }
+  .documents__container__script {
+    font-weight: 500;
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+    width: 55%;
+    text-align: center; }
+  .documents__container__documents {
+    width: 45%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .documents__container__documents--1 {
+      background-image: linear-gradient(120deg, #114e11 50%, #212b10 50%);
+      height: 15rem;
+      width: 35rem;
+      border-radius: 5px; }
+    .documents__container__documents--2 {
+      background-image: linear-gradient(60deg, #212b10 50%, #114e11 50%);
+      height: 15rem;
+      width: 35rem;
+      border-radius: 5px; }
 
-.span-l svg {
-  height: 2rem;
-  width: 6rem;
-  fill: white; }
+.quote-1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
 
-.section-3__p {
-  font-size: 1.5rem;
-  color: white;
-  line-height: 2rem;
-  text-align: center; }
+.quote-2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
