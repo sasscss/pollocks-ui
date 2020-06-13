@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('.js--wp-2-1').waypoint(function(direction){
         $('.js--wp-2-1').addClass('animate__animated animate__fadeInRight');
     },{   
-        offset:"70%"           
+        offset:"75%"           
     }); 
     
     // js--wp-2-1 2nd sec 2nd component    
@@ -65,8 +65,8 @@ $(document).ready(function(){
     }); 
 
     $('.counter').counterUp({ 
-        delay: 30,  
-        time: 2500             
+        delay: 50,  
+        time: 2400              
     });
 
     // $('#location--4').mouseover(function(){ 
