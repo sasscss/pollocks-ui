@@ -542,7 +542,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   width: 3rem;
   margin: .5rem;
   margin-right: 1rem;
-  fill: #7a7878; }
+  fill: #646161; }
 
 .input {
   width: 99%;
