@@ -11,20 +11,20 @@
 // }      
   
 @keyframes text-main {
-    0% {
-        margin-bottom: -5rem;
-        opacity: 0;  
-    }       
-    55% {      
+    // 0% {
+    //     margin-bottom: -5rem;
+    //     opacity: 0;  
+    // }       
+    0% {      
         letter-spacing: 1rem;             
         margin-bottom: -3rem;   
-        opacity: 0;
+        opacity: 0; 
     }
-    70% {
+    40% {  
         letter-spacing: 1.2rem;      
         margin-bottom: -2rem;    
     }  
-    100% {  
+    100% {    
         letter-spacing: .5rem ; 
     }
 }
@@ -34,7 +34,7 @@
     0% {      
         opacity: 0;
     } 
-    50% {            
+    70% {            
         opacity: 0;
     } 
     95% {    
