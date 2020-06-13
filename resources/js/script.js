@@ -80,8 +80,8 @@ $(document).ready(function(){
 
     $('.js--wp-4-2-2').waypoint(function(direction){
         $('.js--wp-4-2-2').addClass('animate__animated  animate__fadeInRight');
-    },{      
-        offset:"70%"             
+    },{       
+        offset:"69%"             
     }); 
 
     $('.counter').counterUp({ 
