@@ -1,39 +1,33 @@
 .section-newsfeed{
     background-image: url(../../resources/images/newsfeed-bg.jpg); 
     background-size: cover;
-    display: flex;
-    flex-direction: column; 
-    height: 50vh;
-}  
-
-.section-newsfeed__container__1{
-    max-width: 120rem;   
+    display: flex;    
+    flex-direction: column;
+} 
+ 
+.section-newsfeed__container__1{  
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
     align-self: center;
-    margin-bottom: 5rem;
-    &__image{
-        height: 35rem;
-        width: 55%;
-        background-image: url(../../resources/images/n4.jpg);
+    margin-bottom: 5rem; 
+    &__image{ 
+        height: 15vw;  
+        width: 15vw; 
+        background-image: url(../../resources/images/n1.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
-        object-fit: cover;  
-        margin-left: 8rem;
+        background-size: cover; 
+        
     }
     &__news{ 
-        font-size: 2rem;
-        width: 45%; 
-        height: 35rem;
+        font-size: 2rem;  
+        width: 60vw;           
+        height: 15vw;  
         border: 3px solid #9D2235;
-        //z-index: 10;
-        align-self: center;
-        justify-self: center;
-        position: relative;
-        margin: 8rem 0 0 -10rem;
-        padding: 3rem 3rem 3rem 12rem;
+        position: relative; 
+        margin: 8rem 0 0 -10.5rem; 
+        padding: 1rem 1rem 1rem 12rem;    
 
         &__button{
             height: 8rem;
@@ -50,30 +44,31 @@
 }
 .section-newsfeed__container__2{
     max-width: 120rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;   
     justify-self: center;
     align-self: center;
     &__image{
-        height: 35rem;
-        width: 55%;
-        background-image: url(../../resources/images/n4.jpg);
+        height: 15vw; 
+        width: 15vw;
+        background-image: url(../../resources/images/n2.jpg);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center; 
         background-size: cover;
         object-fit: cover;  
+        position: relative;
+
     }
     &__news{ 
         font-size: 2rem;
-        width: 45%; 
-        height: 35rem;
+        width: 70vw;       
+        height: 15vw;
         border: 3px solid #9D2235;
         //z-index: 10;
         align-self: center;
         justify-self: center;
-        position: relative;
-        margin: 8rem -10rem 0 8rem;
-        padding: 3rem 8rem 3rem 3rem; 
+        position: relative;   
+        margin: 8rem -10.3rem 0 8rem;
+        padding: 3rem 8rem 3rem 3rem;       
 
         &__button{
             height: 8rem;

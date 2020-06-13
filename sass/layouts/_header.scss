@@ -1,5 +1,5 @@
 .header {
-    height: 98vh;              
+    height: 100vh;               
     background-image: linear-gradient(to bottom ,rgba(0,0,0,.2),rgba(0,0,0,.9)),url(../../resources/images/header-p3.jpg);   
     filter: brightness(150%);      
     background-size: cover;     
@@ -8,13 +8,7 @@
     display:grid;  
     grid-template-rows: min-content 1fr  min-content min-content min-content 1fr;  
      
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
-
-    @media only screen and (max-width: 60em) {      
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }  
+   
    &__logo-container {  
        background-color: rgba(#fff, $alpha: .7);                       
        filter: brightness(70%);          

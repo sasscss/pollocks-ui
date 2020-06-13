@@ -59,9 +59,8 @@
         top: 0;    
         right: 0; //if it is right the nav list enters from right 
                    
-           
-          background-image: linear-gradient(rgba(240, 255, 240, 0.925),	#F0FFF0);  
-         -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+        background-color: white; 
+        -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
         z-index: 1500;
         opacity: 0;        
