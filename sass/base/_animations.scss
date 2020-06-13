@@ -89,9 +89,7 @@
 
  
 .js--wp-1-1, 
-.js--wp-1-2-1,    
-.js--wp-1-2-2,
-.js--wp-1-2-3, 
+.js--wp-1-2, 
 .js--wp-2-1, 
 .js--wp-2-2,   
 .js--wp-3-1,  
@@ -99,15 +97,18 @@
 .js--wp-3-2-2,
 .js--wp-4-1,
 .js--wp-4-2-1, 
-.js--wp-4-2-2{  
-
+.js--wp-4-2-2,
+.js--wp-4-2-3, 
+.js--wp-4-2-4,
+.js--wp-7-1, 
+.js--wp-7-2, 
+.js--wp-7-3  
+{  
     opacity: 0;            
 }      
 
 .js--wp-1-1.animate__animated,  
-.js--wp-1-2-1.animate__animated,  
-.js--wp-1-2-2.animate__animated,
-.js--wp-1-2-3.animate__animated,  
+.js--wp-1-2.animate__animated,   
 .js--wp-2-1.animate__animated,
 .js--wp-2-2.animate__animated,
 .js--wp-3-1.animate__animated
@@ -115,7 +116,12 @@
 .js--wp-3-2-2.animate__animated,
 .js--wp-4-1.animate__animated,
 .js--wp-4-2-1.animate__animated,
-.js--wp-4-2-2.animate__animated{   
+.js--wp-4-2-2.animate__animated,
+.js--wp-4-2-3.animate__animated,
+.js--wp-4-2-4.animate__animated,
+.js--wp-7-1.animate__animated,
+.js--wp-7-2.animate__animated,
+.js--wp-7-3.animate__animated{   
 
     opacity: 1;  
 } 
@@ -185,4 +191,35 @@
   .animate__fadeInRight {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
+  }
+
+  @-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animate__fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
   }

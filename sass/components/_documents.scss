@@ -40,19 +40,19 @@
    }
 
     &__document {
-        height: 50%; 
+        height: 20%;  
         width: 90%;     
-        min-width: 40rem;  
-        min-height: 15rem;   
+        min-width: 40rem;   
         border-radius: 5px;
         text-align: center;  
         color: rgb(168, 243, 212);
         padding: 1rem 0; 
         display: block; 
-        text-decoration: none;       
-        padding: 5rem 0;  
+        text-decoration: none;           
         font-size: 2.5rem;  
-        font-weight: 300;    
+        font-weight: 300;   
+        
+        &:not(:last-child) { margin-bottom: .5rem;}  
 
 
         &--1{

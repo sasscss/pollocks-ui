@@ -6,13 +6,13 @@
     }
 
     &__logo {
-        height: 11rem;  
+        height: 11rem;   
         margin-left: 5rem;                      
         display: block; 
-    }       
+    }
  
     &__button {
-        background-color:#fff;   
+        background-color:#fff;      
         height: 5rem;
         width: 5rem;                  
         position: fixed;  
@@ -60,12 +60,13 @@
         right: 0; //if it is right the nav list enters from right 
                    
         background-color: white; 
-        -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
-        z-index: 1500;
-        opacity: 0;        
-        height: 100vh; 
-        width: 0;  // the width increases form 0  to 100 on animation
+        // -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+        // clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+        z-index: 1500;  
+        height: 100vh;  
+        margin-right: -40rem;  
+            
+        width:33rem;          
         transition: all .8s linear; 
         
     } 
@@ -73,7 +74,7 @@
     &__list {       
         display: block;               
         list-style: none;
-        transform: translate(15%,20vh);                    
+        transform: translate(1%,20vh);                       
 
     }
   
@@ -119,10 +120,9 @@
    
     // }
     &__checkbox:checked ~ &__nav {
-        opacity: 1;
         visibility: visible;  
-        height: 100vh; 
-        width:38rem;                  
+        height: 100vh;   
+        margin-right: 0;
     }
        
 
