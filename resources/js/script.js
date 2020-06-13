@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.js--wp-1-2').waypoint(function(direction){
         $('.js--wp-1-2').addClass('animate__animated card-fade-in-left');
     },{ 
-        offset:"50%"       
+        offset:"60%"       
     }); 
     // $('.js--wp-1-2-2').waypoint(function(direction){
     //     $('.js--wp-1-2-2').addClass('animate__animated animate__fadeIn');
