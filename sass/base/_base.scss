@@ -15,6 +15,7 @@ html {
       lest now make it into percentage where regular default fontsize of browser is 
       16px so , 16px as 100% then 10px is 62.5% */
     font-size: 62.5%; /* 10px */ //1rem=10px here
+    scroll-behavior: smooth;
       
      @media only screen and (max-width: 75em) {   font-size: 50%;   }
   
@@ -24,7 +25,6 @@ html {
    
   body {
     box-sizing: border-box;   
-    scroll-behavior: smooth;
   }
 
   .xx {

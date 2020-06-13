@@ -1,29 +1,29 @@
 .navigation {
-    font-family: 'Josefin Sans', sans-serif;
-    height: 0;
+    font-family: 'Josefin Sans', sans-serif;  
+   height: 0;
     &__checkbox {
         visibility: hidden;
     }
-
+ 
     &__logo {
         height: 11rem;   
-        margin-left: 5rem;                      
+        margin-left: 5rem;                       
         display: block; 
     }
- 
-    &__button {
+
+     &__button {
         background-color:#fff;      
         height: 5rem;
         width: 5rem;                  
         position: fixed;  
-        top: 4vh;            
-        right: 5vw; 
-        border-radius: 50%;
-        z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: .1);
+        top: 10vh;                
+        right: 0;    
+        z-index: 2000;  
+      //  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.13);
         text-align: center;
-        cursor: pointer;
-
+        cursor: pointer; 
+        margin-right: -1px;       
+        transition: all .8s linear; 
         // @include respond(tab-port) { 
         //     height: 5rem;
         //     width: 5rem;
@@ -33,30 +33,11 @@
         //   }
     }
 
-    &__background {
-        height: 4.5rem;
-        width: 4.5rem; 
-        border-radius: 50%;
-        position: fixed;
-        top: 6.5rem; 
-        right: 6.2rem; 
-     
-        z-index: 1000;  
-        transition: transform .8s ;  
-    
-        // @include respond(tab-port) { 
-        //     height: 4rem;
-        //     width: 4rem;   
-        //     top:  5rem;
-        //     right: 5rem;
-        //   }
-
-       
-    }
+ 
   
     &__nav {  
         position: fixed;         
-        top: 0;    
+        top: 0;     
         right: 0; //if it is right the nav list enters from right 
                    
         background-color: white; 
@@ -64,7 +45,7 @@
         // clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
         z-index: 1500;  
         height: 100vh;  
-        margin-right: -40rem;  
+        margin-right: -33rem;     
             
         width:33rem;          
         transition: all .8s linear; 
@@ -90,12 +71,12 @@
             display: inline-block;
             text-decoration: none;
             font-size: 2.5rem;      
-            font-weight: 300; 
-            padding: .3rem 2rem;    
+            font-weight: 300;   
+            padding: .3rem 2rem;     
             color: rgb(40, 17, 59); 
             text-transform: uppercase;
-           // background-image: linear-gradient(130deg ,transparent 0%,transparent 50%,  white 50%);
-          //  background-size: 230%; 
+        //    background-image: linear-gradient(130deg ,transparent 0%,transparent 50%,  white 50%);
+        //    background-size: 230%; 
             transition: all .3s; 
 
             span {  
@@ -122,7 +103,10 @@
     &__checkbox:checked ~ &__nav {
         visibility: visible;  
         height: 100vh;   
-        margin-right: 0;
+        margin-right: 0; 
+    } 
+    &__checkbox:checked ~ &__button {
+       margin-right: 33rem; 
     }
        
 

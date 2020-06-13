@@ -3,35 +3,54 @@
     background-image: linear-gradient(to bottom ,rgba(0,0,0,.35),rgba(0,0,0,.7)),url(../../resources/images/header-bg.jpg);   
     filter: brightness(150%);      
     background-size: cover;      
-    background-position: left;                 
-    display: flex; 
-    flex-flow: column;       
-    align-items: center;
-    justify-content: center;
+    background-position: top;                         
+          
+    display: grid; 
+    grid-template-rows: min-content 1fr;
+    position: relative; 
+
+    &__text {
+         display: flex;
+         align-items: center;
+         justify-content: center;  
+         flex-direction: column;        
+    }
+
       
+    a {
+                text-decoration: none;
+            position: absolute;
+            top: 90vh;      
+            left: 47%;   
+            color: white;
+            font-size: 1.5rem;   
+               
+            ::after {
+                content: "dfgdfgdf";
+            }
+     
+    }
    
    &__logo-container {  
-     // background-color: rgba(255, 255, 255, 0.1);                                
+      background-color: rgba(255, 255, 255, 0.9);                                           
        filter: brightness(65%);            
        margin: 4vh;            
-       justify-self: center;         
+       justify-self: start;             
        border-radius: 50%;  
        border: 1px solid white;        
 
    }                 
 
-   &__logo {    
+   &__logo {        
         height: 9rem;
         margin: 1rem;        
    }
 
    &__text--main {
-       justify-self: center; 
-       animation: text-main 5.2s;         
-        
+       animation: text-main 5.2s;  
    }
 
-   &__text-seperator {
+   &__text-seperator {   
        display: grid;    
        grid-template-columns: minmax(11rem, min-content) max-content minmax(12.5rem, min-content) ;         
        align-items: center;  
@@ -41,7 +60,7 @@
        font-size: 2rem;    
        font-weight: 100;                         
        letter-spacing: .1rem;    
-       animation: text-sub 5.2s;             
+       animation: text-sub 5.2s;    
             
            &::before,
            &::after {
@@ -70,3 +89,8 @@
    }
   
 }    
+
+.discover-now{
+   
+
+}

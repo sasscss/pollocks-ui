@@ -103,12 +103,12 @@ $(document).ready(function(){
     $('.js--wp-7-2').waypoint(function(direction){
         $('.js--wp-7-2').addClass('animate__animated  card-fade-in-up');
     },{        
-        offset:"60%"                 
+        offset:"65%"                 
     }); 
     $('.js--wp-7-3').waypoint(function(direction){
         $('.js--wp-7-3').addClass('animate__animated  card-fade-in-up');
     },{        
-        offset:"60%"                 
+        offset:"65%"                 
     }); 
 
     $('.counter').counterUp({ 

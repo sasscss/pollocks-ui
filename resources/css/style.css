@@ -14,7 +14,8 @@ html {
       lest now make it into percentage where regular default fontsize of browser is 
       16px so , 16px as 100% then 10px is 62.5% */
   font-size: 62.5%;
-  /* 10px */ }
+  /* 10px */
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
@@ -23,8 +24,7 @@ html {
       font-size: 40%; } }
 
 body {
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
+  box-sizing: border-box; }
 
 .xx {
   height: 100vh; }
@@ -97,6 +97,14 @@ body {
     opacity: 0; }
   95% {
     opacity: 1; } }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 
 @keyframes card-fade-in-right {
   0% {
@@ -244,22 +252,35 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), url(../../resources/images/header-bg.jpg);
   filter: brightness(150%);
   background-size: cover;
-  background-position: left;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center; }
+  background-position: top;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  position: relative; }
+  .header__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .header a {
+    text-decoration: none;
+    position: absolute;
+    top: 90vh;
+    left: 47%;
+    color: white;
+    font-size: 1.5rem; }
+    .header a ::after {
+      content: "dfgdfgdf"; }
   .header__logo-container {
+    background-color: rgba(255, 255, 255, 0.9);
     filter: brightness(65%);
     margin: 4vh;
-    justify-self: center;
+    justify-self: start;
     border-radius: 50%;
     border: 1px solid white; }
   .header__logo {
     height: 9rem;
     margin: 1rem; }
   .header__text--main {
-    justify-self: center;
     animation: text-main 5.2s; }
   .header__text-seperator {
     display: grid;
@@ -300,22 +321,13 @@ body {
     height: 5rem;
     width: 5rem;
     position: fixed;
-    top: 4vh;
-    right: 5vw;
-    border-radius: 50%;
+    top: 10vh;
+    right: 0;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
-    cursor: pointer; }
-  .navigation__background {
-    height: 4.5rem;
-    width: 4.5rem;
-    border-radius: 50%;
-    position: fixed;
-    top: 6.5rem;
-    right: 6.2rem;
-    z-index: 1000;
-    transition: transform .8s; }
+    cursor: pointer;
+    margin-right: -1px;
+    transition: all .8s linear; }
   .navigation__nav {
     position: fixed;
     top: 0;
@@ -323,7 +335,7 @@ body {
     background-color: white;
     z-index: 1500;
     height: 100vh;
-    margin-right: -40rem;
+    margin-right: -33rem;
     width: 33rem;
     transition: all .8s linear; }
   .navigation__list {
@@ -351,6 +363,8 @@ body {
     visibility: visible;
     height: 100vh;
     margin-right: 0; }
+  .navigation__checkbox:checked ~ .navigation__button {
+    margin-right: 33rem; }
   .navigation__icon {
     position: relative;
     margin-top: 2.6rem; }
