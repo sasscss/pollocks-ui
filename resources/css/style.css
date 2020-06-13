@@ -494,13 +494,13 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   overflow: hidden; }
 
 .picker {
-  width: 36rem;
-  height: 6rem;
+  width: 99%;
+  height: 100%;
   color: grey;
   justify-self: center;
-  padding-left: 1rem;
   font-size: 1.5rem;
-  outline: 1.2px solid #16dfdf; }
+  outline: none;
+  border: none; }
 
 .complete-form {
   display: grid;
@@ -540,10 +540,12 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .icon-form {
   height: 3rem;
   width: 3rem;
-  fill: darkgrey; }
+  margin: .5rem;
+  margin-right: 1rem;
+  fill: #7a7878; }
 
 .input {
-  width: 100%;
+  width: 99%;
   border-style: none;
   font-size: 2rem;
   color: grey;

@@ -7,14 +7,15 @@
  
       
 
-.picker {  
-    width: 36rem;                     
-    height: 6rem;                   
+.picker {    
+    width: 99%;                        
+    height: 100%;                   
     color: grey;   
-    justify-self: center; 
-    padding-left: 1rem;    
-    font-size: 1.5rem;     
-    outline: 1.2px solid rgb(22, 223, 223);   
+    justify-self: center;     
+    font-size: 1.5rem; 
+    outline: none;
+    border: none;    
+
 
 }
 
@@ -58,18 +59,20 @@
 .form:focus-within{    //
     border:none;
     svg{
-        fill:teal;
+        fill:teal; 
     }
 }
 
-.icon-form{
+.icon-form{ 
     height: 3rem;
     width: 3rem;
-    fill:darkgrey;
+    margin: .5rem;
+    margin-right: 1rem;  
+    fill:rgb(122, 120, 120);
 }
 
 .input{
-    width: 100%;
+    width: 99%; 
     border-style: none;
     font-size: 2rem;
     color: grey;
