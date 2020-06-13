@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.js--wp-1-2').waypoint(function(direction){
         $('.js--wp-1-2').addClass('animate__animated card-fade-in-left');
     },{ 
-        offset:"60%"       
+        offset:"70%"        
     }); 
     // $('.js--wp-1-2-2').waypoint(function(direction){
     //     $('.js--wp-1-2-2').addClass('animate__animated animate__fadeIn');
@@ -75,24 +75,24 @@ $(document).ready(function(){
     $('.js--wp-4-2-1').waypoint(function(direction){
         $('.js--wp-4-2-1').addClass('animate__animated  animate__fadeInRight');
     },{     
-        offset:"70%"     
+        offset:"72%"     
     });
 
     $('.js--wp-4-2-2').waypoint(function(direction){
         $('.js--wp-4-2-2').addClass('animate__animated  animate__fadeInRight');
     },{        
-        offset:"70%"                 
+        offset:"72%"                 
     }); 
 
     $('.js--wp-4-2-3').waypoint(function(direction){
         $('.js--wp-4-2-3').addClass('animate__animated  animate__fadeInRight');
     },{        
-        offset:"70%"                 
+        offset:"72%"                 
     }); 
     $('.js--wp-4-2-4').waypoint(function(direction){
         $('.js--wp-4-2-4').addClass('animate__animated  animate__fadeInRight');
     },{        
-        offset:"70%"                 
+        offset:"72%"                 
     }); 
 
     $('.js--wp-7-1').waypoint(function(direction){
@@ -113,7 +113,7 @@ $(document).ready(function(){
 
     $('.counter').counterUp({ 
         delay: 40,    
-        time: 2500               
+        time: 2000                
     });
 
     // $('#location--4').mouseover(function(){ 
