@@ -1,12 +1,13 @@
 .section-newsfeed{
-    background-image: url(../../resources/images/newsfeed-bg.jpg);   
+    background-image: url(../../resources/images/newsfeed-bg.jpg); 
     background-size: cover;
     display: flex;
-    flex-direction: column;
-} 
+    flex-direction: column; 
+    height: 50vh;
+}  
 
 .section-newsfeed__container__1{
-    max-width: 120rem;
+    max-width: 120rem;   
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
