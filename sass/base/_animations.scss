@@ -70,8 +70,9 @@
 
 @keyframes card-fade-in-up {
     0% {
-        transform: translate(0rem,1rem);   
-        opacity: 0;  
+        transform: translate(0rem,2rem);   
+        visibility: hidden;    
+        opacity: 0;   
     }  
     100% {
         transform: translate(0,0);    
@@ -95,7 +96,10 @@
 .js--wp-2-2,   
 .js--wp-3-1,  
 .js--wp-3-2-1, 
-.js--wp-3-2-2{  
+.js--wp-3-2-2,
+.js--wp-4-1,
+.js--wp-4-2-1, 
+.js--wp-4-2-2{  
 
     opacity: 0;            
 }      
@@ -108,7 +112,10 @@
 .js--wp-2-2.animate__animated,
 .js--wp-3-1.animate__animated
 .js--wp-3-2-1.animate__animated,
-.js--wp-3-2-2.animate__animated{   
+.js--wp-3-2-2.animate__animated,
+.js--wp-4-1.animate__animated,
+.js--wp-4-2-1.animate__animated,
+.js--wp-4-2-2.animate__animated{   
 
     opacity: 1;  
 } 

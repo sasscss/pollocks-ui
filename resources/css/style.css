@@ -115,7 +115,8 @@ body {
 
 @keyframes card-fade-in-up {
   0% {
-    transform: translate(0rem, 1rem);
+    transform: translate(0rem, 2rem);
+    visibility: hidden;
     opacity: 0; }
   100% {
     transform: translate(0, 0);
@@ -138,7 +139,10 @@ body {
 .js--wp-2-2,
 .js--wp-3-1,
 .js--wp-3-2-1,
-.js--wp-3-2-2 {
+.js--wp-3-2-2,
+.js--wp-4-1,
+.js--wp-4-2-1,
+.js--wp-4-2-2 {
   opacity: 0; }
 
 .js--wp-1-1.animate__animated,
@@ -149,7 +153,10 @@ body {
 .js--wp-2-2.animate__animated,
 .js--wp-3-1.animate__animated
 .js--wp-3-2-1.animate__animated,
-.js--wp-3-2-2.animate__animated {
+.js--wp-3-2-2.animate__animated,
+.js--wp-4-1.animate__animated,
+.js--wp-4-2-1.animate__animated,
+.js--wp-4-2-2.animate__animated {
   opacity: 1; }
 
 .animate__animated {
@@ -724,7 +731,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     opacity: 1; }
 
 .section-newsfeed {
-  background-image: url(../../resources/images/001_paper_2872x2592_all-free-download.com.jpg);
+  background-image: url(../../resources/images/newsfeed-bg.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column; }
@@ -854,7 +861,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     font-size: 2rem; }
 
 .section-documents {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.82) 45%, rgba(0, 0, 0, 0.6) 70%), url(../../resources/images/sectionimg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 45%, rgba(0, 0, 0, 0.4) 70%), url(../../resources/images/sectionimg.jpg);
   min-height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -880,12 +887,24 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     font-style: italic;
     width: 90%;
     text-align: center; }
+  .documents__document-container {
+    text-align: center; }
+    .documents__document-container :hover {
+      filter: brightness(70%); }
   .documents__document {
     height: 50%;
     width: 90%;
     min-width: 40rem;
     min-height: 15rem;
-    border-radius: 5px; }
+    border-radius: 5px;
+    text-align: center;
+    color: #a8f3d4;
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+    padding: 5rem 0;
+    font-size: 2.5rem;
+    font-weight: 300; }
     .documents__document--1 {
       background-image: linear-gradient(120deg, #114e11 50%, #212b10 50%); }
     .documents__document--2 {
@@ -895,11 +914,10 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   font-size: 3rem;
   font-weight: 600;
   font-style: normal;
-  text-transform: uppercase;
-  margin-bottom: 1rem; }
+  text-transform: uppercase; }
 
 .quote-2 {
   font-size: 3.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 1rem; }
+  margin: 1rem 0; }

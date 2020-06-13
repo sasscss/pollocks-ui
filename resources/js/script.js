@@ -62,11 +62,31 @@ $(document).ready(function(){
         $('.js--wp-3-2-2').addClass('animate__animated card-fade-in-left');
     },{   
         offset:"70%"    
+    });   
+
+
+    $('.js--wp-4-1').waypoint(function(direction){
+        $('.js--wp-4-1').addClass('animate__animated card-fade-in-up');
+    },{     
+        offset:"70%"    
+    });
+
+    
+    $('.js--wp-4-2-1').waypoint(function(direction){
+        $('.js--wp-4-2-1').addClass('animate__animated  animate__fadeInRight');
+    },{     
+        offset:"70%"     
+    });
+
+    $('.js--wp-4-2-2').waypoint(function(direction){
+        $('.js--wp-4-2-2').addClass('animate__animated  animate__fadeInRight');
+    },{      
+        offset:"75%"          
     }); 
 
     $('.counter').counterUp({ 
-        delay: 50,  
-        time: 2400              
+        delay: 40,    
+        time: 3000              
     });
 
     // $('#location--4').mouseover(function(){ 
