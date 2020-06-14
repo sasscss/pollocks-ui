@@ -1,91 +1,140 @@
 .section-newsfeed{
-    background-image: url(../../resources/images/newsfeed-bg.jpg); 
-    background-size: cover;
-    display: flex;    
-    flex-direction: column;
-} 
- 
-.section-newsfeed__container__1{  
+    background-color: white;
+    height: 65rem;
+   // height: max-content;
+    width: 100vw;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    &__header{
+        width: max-content;
+        margin-left: 50vw;  
+        padding: 2rem;
+        text-align: center;
+        h2{
+            font-size: 5rem;
+            color: #8b0000;
+            font-weight: 400;
+            @media only screen and (max-width: 32em)  { 
+                font-size: 3rem; 
+            }
+        }
+        h3{ 
+            text-transform: uppercase;
+            color: #8b0000;
+            border-bottom: 1.5px solid #8b0000;
+            display: inline-block;
+            margin: 0 auto;  
+            @media only screen and (max-width: 32em)  { 
+                font-size: 2rem;        
+            }
+        }
+    }
+
+    &__button{
+        font-size: 3rem; 
+        position: absolute;
+        top: 84%;
+        left: 2%;  
+        color: #8b0000;
+        text-decoration: none;
+    }
+}
+.section-newsfeed__containers{
+    position: absolute;
+    top: 48%;
+    left: 55%;                          
+    transform: translate(-50%,-50%);
+    height: 44rem;
+    width: 80rem;
+    padding: 2rem;  
+    overflow: hidden;
+
+    @media only screen and (max-width: 32em)  { 
+        height: 43rem;          
+        width: 60rem;  
+    }
+
+
+}
+       
+.section-newsfeed__container{
+    height: 100%;
+    width: 100%; 
     display: flex;
-    flex-wrap: wrap;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 5rem; 
-    &__image{ 
-        height: 15vw;  
-        width: 15vw; 
-        background-image: url(../../resources/images/n1.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; 
-        
-    }
-    &__news{ 
-        font-size: 2rem;  
-        width: 60vw;           
-        height: 15vw;  
-        border: 3px solid #9D2235;
-        position: relative; 
-        margin: 8rem 0 0 -10.5rem; 
-        padding: 1rem 1rem 1rem 12rem;    
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    visibility: hidden;
 
-        &__button{
-            height: 8rem;
-            width: 10rem;
-            background-color: #9D2235;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            border: none;
-
-        }
-    }
-
-}
-.section-newsfeed__container__2{
-    max-width: 120rem;
-    display: flex;   
-    justify-self: center;
-    align-self: center;
     &__image{
-        height: 15vw; 
-        width: 15vw;
-        background-image: url(../../resources/images/n2.jpg);
-        background-repeat: no-repeat;
-        background-position: center; 
+        height: calc(100% - 8rem);
+        width: 50%;
         background-size: cover;
-        object-fit: cover;  
-        position: relative;
+        background-repeat: no-repeat;
+        box-shadow: 1px 2px 2px rgba($color: #000000, $alpha: 0.8);
 
-    }
-    &__news{ 
-        font-size: 2rem;
-        width: 70vw;       
-        height: 15vw;
-        border: 3px solid #9D2235;
-        //z-index: 10;
-        align-self: center;
-        justify-self: center;
-        position: relative;   
-        margin: 8rem -10.3rem 0 8rem;
-        padding: 3rem 8rem 3rem 3rem;       
+        &--1 {  background-image: linear-gradient(to left,#8b000036,#8b00002a),url(../../resources/images/n1.jpg); }
+        &--2 {  background-image: linear-gradient(to left,#8b000036,#8b00002a),url(../../resources/images/n2.jpg); }
+        &--3 {  background-image: linear-gradient(to left,#8b000036,#8b00002a),url(../../resources/images/n3.jpg); }
+    }  
+       
+    &__news{
+        height: calc(100% - 8rem);
+        width:50% ;
+        border: 2px solid #8b0000;
+        padding: 3rem 3rem 3rem 8rem;
+        margin-left: -6rem;
+        margin-top:6rem;
+        position:  relative;
 
-        &__button{
-            height: 8rem;
-            width: 10rem;
-            background-color: #9D2235;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            border: none;
+        p {
+            display: inline-block;
 
         }
+      
     }
 
 }
+.pre,.next{
+    height: 6rem;
+    width: 3rem;
+    border: none;
+    position: absolute;
+    cursor:  pointer;
+
+    svg {
+        height: 100%;
+        width: 100%;
+        fill: rgb(87, 16, 16);
+ 
+        :hover {
+            transform: scale(1.12);
+        }
+    } 
+    
+}
+.pre {
+    bottom: 0;
+    left: 0;  
+}
+.next{       
+    left: 3rem; 
+    bottom: 0;      
+}
+
+#c1:checked ~ #one,
+#c2:checked ~ #two,
+#c3:checked ~ #three{
+    z-index: 9;
+    visibility: visible;
+}
+ 
+
+    
+    
+        
 
   
-
-    
-    
-        
