@@ -252,7 +252,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), url(../../resources/images/header-bg.jpg);
   filter: brightness(150%);
   background-size: cover;
-  background-position: top;
+  background-position: left;
   display: grid;
   grid-template-rows: min-content 1fr;
   position: relative; }
@@ -439,11 +439,9 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-about {
   margin-bottom: 5rem;
   padding: 3rem 5vw;
-  background-size: cover;
-  overflow: hidden; }
+  background-size: cover; }
 
 .section-locations {
-  overflow: hidden;
   margin-top: -13rem;
   padding: 6rem 0 4rem 0;
   background-image: linear-gradient(to bottom, #ECEFF1, #ECEFF1);
