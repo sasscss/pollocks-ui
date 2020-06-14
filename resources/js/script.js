@@ -119,7 +119,7 @@ $(document).ready(function(){
     // $('#location--4').mouseover(function(){ 
     //     $(this).parent().animate({marginLeft:"-19vw"},500); 
     // }); 
-    $('#location--5').mouseover(function(){ 
+    $('#location--5').mouseover(function(){  
         $(this).parent().animate({marginLeft:"-19vw"},300);       
      });  
     // $('#location--3').mouseover(function(){

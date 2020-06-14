@@ -1015,7 +1015,11 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     margin-left: -6rem;
     margin-top: 6rem;
     position: relative; }
+    .section-newsfeed__container__news h3 {
+      color: #741515; }
     .section-newsfeed__container__news p {
+      color: #1c5253;
+      margin-top: 3rem;
       display: inline-block; }
 
 .pre, .next {
