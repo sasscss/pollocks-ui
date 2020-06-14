@@ -1,9 +1,10 @@
 .footer {
-    background-color:  #021220;
-    height: 70vh; 
+    background-color:  #021220;    
+    height: 85vh;  
     padding: 3rem 2rem; 
     text-align: center;   
     overflow: hidden;    
+    position: relative;  
 
         //position: relative;
          
@@ -100,3 +101,34 @@
         }
     }
 }
+
+.developer {
+    color: whitesmoke; 
+    text-align: start;  
+    bottom: 4rem;    
+    left: 3rem;   
+    position: absolute;  
+    p{
+        font-size: 1.2rem;  
+        color: rgb(206, 199, 184);     
+        a {
+           
+            
+            &:link,
+            &:visited {
+                font-size: 1.5rem; 
+                text-decoration: none; 
+                color: white; 
+                display: inline-block;      
+            } 
+            &:hover ,
+            &:active {
+                font-size: 1.5rem; 
+                text-decoration: none;  
+                color: white; 
+                display: inline-block;  
+                transform:scale(1.1) translateX(5%);   
+            }
+        }
+    }
+} 
