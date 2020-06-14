@@ -3,7 +3,10 @@
     padding: 3rem 5vw;            
      
     background-size: cover;                        
-    overflow: hidden;             
+    overflow: hidden;
+    @include respond(tab-port) {
+        padding: 3rem 5vw 5.5rem 5vw;    
+    }             
 }    
           
 .section-locations{   

@@ -4,6 +4,9 @@
     margin-top: 5rem;  
     margin-left: 5rem;    
     width: 80%;  
+    @include respond(tab-port) {
+        margin-top: 3rem;    
+    }
     &__photo { 
         width: 50%; 
         box-shadow: 0 1.5rem 4rem rgba($color-black, .2);  
@@ -15,7 +18,7 @@
         @include respond(tab-port) {
             float: left;
             position: relative;
-            width: 33.3333%;
+            width: 33.3333%;  
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
         }
 

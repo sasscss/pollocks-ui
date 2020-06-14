@@ -457,6 +457,9 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   padding: 3rem 5vw;
   background-size: cover;
   overflow: hidden; }
+  @media only screen and (max-width: 68.5em) {
+    .section-about {
+      padding: 3rem 5vw 5.5rem 5vw; } }
 
 .section-locations {
   overflow: hidden;
@@ -603,6 +606,9 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   margin-top: 5rem;
   margin-left: 5rem;
   width: 80%; }
+  @media only screen and (max-width: 68.5em) {
+    .composition {
+      margin-top: 3rem; } }
   .composition__photo {
     width: 50%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
