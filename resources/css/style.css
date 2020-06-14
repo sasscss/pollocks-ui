@@ -1030,9 +1030,11 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   cursor: pointer;
   background-color: #8b0000; }
   .pre svg, .next svg {
-    height: 100%;
-    margin-top: -2px;
-    fill: white; }
+    height: 95%;
+    margin-top: -.5px;
+    fill: white;
+    background-color: #920f0f;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.322); }
   .pre :hover, .next :hover {
     background-color: #a73838; }
 
