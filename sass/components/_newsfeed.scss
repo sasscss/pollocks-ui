@@ -2,14 +2,14 @@
     background-color: white;
     height: 65rem;
    // height: max-content;
-    width: 100vw;
+    width: 96vw;   
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: 0;    
 
     &__header{
         width: max-content;
-        margin-left: 50vw;  
+        margin-left: 50vw;     
         padding: 2rem;
         text-align: center;
         h2{
@@ -44,12 +44,12 @@
 .section-newsfeed__containers{
     position: absolute;
     top: 48%;
-    left: 55%;                          
+    left: 55.5%;                               
     transform: translate(-50%,-50%);
     height: 44rem;
-    width: 80rem;
-    padding: 2rem;  
-    overflow: hidden;
+    width: 78rem;    
+    padding: 2rem; 
+    overflow: hidden ;    
 
     @media only screen and (max-width: 32em)  { 
         height: 43rem;          

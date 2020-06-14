@@ -265,7 +265,8 @@ body {
   background-position: top;
   display: grid;
   grid-template-rows: min-content 1fr;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media only screen and (max-width: 75em) {
     .header {
       background-position: left; } }
@@ -939,7 +940,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-newsfeed {
   background-color: white;
   height: 65rem;
-  width: 100vw;
+  width: 96vw;
   position: relative;
   padding: 0;
   margin: 0; }
@@ -975,10 +976,10 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-newsfeed__containers {
   position: absolute;
   top: 48%;
-  left: 55%;
+  left: 55.5%;
   transform: translate(-50%, -50%);
   height: 44rem;
-  width: 80rem;
+  width: 78rem;
   padding: 2rem;
   overflow: hidden; }
   @media only screen and (max-width: 32em) {
