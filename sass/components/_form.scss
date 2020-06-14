@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: min-content 1fr;
     align-content: center; 
-    border: 1.2px solid rgb(9, 175, 175); 
+    border: 1.2px solid teal; 
     position: relative;
     overflow: hidden;
  
@@ -84,14 +84,14 @@
 .section-form__h3{
 
     font-size: 3rem;
-    font-weight: 200;
-    margin: 4.5rem;
+    font-weight: 300;
+    margin: 2rem;
     color: teal;
 }
 .section-form__h2{
     font-size: 5rem;
-    font-weight: 300;
-    margin-bottom: 5rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
     text-transform: uppercase;
     color: teal;
 }

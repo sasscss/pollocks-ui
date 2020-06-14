@@ -1,10 +1,11 @@
 .section-documents{
-    background-image: linear-gradient(to right,rgba(black,0.6) 45%,rgba(black,.4) 70%),url(../../resources/images/sectionimg.jpg);
+    background-image: linear-gradient(to right,rgba(black,0.5) 45%,rgba(#9d2235,.4) 70%),url(../../resources/images/sectionimg.jpg);
     min-height: 60rem; 
     background-repeat: no-repeat;   
     background-size: cover;
     background-position: bottom; 
     background-attachment: fixed;
+    background-blend-mode: color-burn;
     padding: 3rem;
     display: flex;  
     align-content: center; 
@@ -56,11 +57,11 @@
 
 
         &--1{
-            background-image:linear-gradient(120deg, rgb(17, 78, 17) 50%,rgb(33, 43, 16) 50%);
+            background-image:linear-gradient(120deg, #9d2235 50%,#5e141f 50%);
              
         }
         &--2{
-            background-image:linear-gradient(60deg, rgb(33, 43, 16) 50%,rgb(17, 78, 17) 50%);
+            background-image:linear-gradient(60deg, #5e141f 50%,#9d2235 50%);
         
         }
 

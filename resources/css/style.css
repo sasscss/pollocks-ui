@@ -541,10 +541,12 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   overflow: hidden; }
 
 .section-achivements {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../resources/images/accomplishments-bg.jpg);
+  background-image: linear-gradient(to right, rgba(157, 34, 53, 0.4) 15%, rgba(0, 0, 0, 0.4) 40%, rgba(157, 34, 53, 0.4) 80%), url(../../resources/images/accomplishments-bg.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-blend-mode: color-burn;
   padding: 5rem 3rem;
   overflow: hidden; }
 
@@ -607,7 +609,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   display: grid;
   grid-template-columns: min-content 1fr;
   align-content: center;
-  border: 1.2px solid #09afaf;
+  border: 1.2px solid teal;
   position: relative;
   overflow: hidden; }
   .form::after {
@@ -645,14 +647,14 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 
 .section-form__h3 {
   font-size: 3rem;
-  font-weight: 200;
-  margin: 4.5rem;
+  font-weight: 300;
+  margin: 2rem;
   color: teal; }
 
 .section-form__h2 {
   font-size: 5rem;
-  font-weight: 300;
-  margin-bottom: 5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
   text-transform: uppercase;
   color: teal; }
 
@@ -881,24 +883,25 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 4rem;
-  width: 12rem;
+  height: 6rem;
+  width: 14rem;
   border-radius: 3px;
   background-color: teal; }
   .button__a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    padding-left: 2.2rem;
-    z-index: 10; }
+    z-index: 10;
+    text-align: center; }
   .button::before {
     content: "";
-    background-color: white;
+    background-color: #feb249;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -911,7 +914,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   transform: scaleX(1); }
 
 .button:hover .button__a {
-  color: teal; }
+  color: white; }
 
 .section-academics__heading {
   height: 40rem;
@@ -1118,12 +1121,13 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     font-size: 2rem; }
 
 .section-documents {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 45%, rgba(0, 0, 0, 0.4) 70%), url(../../resources/images/sectionimg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 45%, rgba(157, 34, 53, 0.4) 70%), url(../../resources/images/sectionimg.jpg);
   min-height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
+  background-blend-mode: color-burn;
   padding: 3rem;
   display: flex;
   align-content: center;
@@ -1163,9 +1167,9 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     .documents__document:not(:last-child) {
       margin-bottom: .5rem; }
     .documents__document--1 {
-      background-image: linear-gradient(120deg, #114e11 50%, #212b10 50%); }
+      background-image: linear-gradient(120deg, #9d2235 50%, #5e141f 50%); }
     .documents__document--2 {
-      background-image: linear-gradient(60deg, #212b10 50%, #114e11 50%); }
+      background-image: linear-gradient(60deg, #5e141f 50%, #9d2235 50%); }
 
 .quote-1 {
   font-size: 3rem;
