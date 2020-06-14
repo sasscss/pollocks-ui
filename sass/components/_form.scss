@@ -29,6 +29,7 @@
 }
 
 .form{
+    padding-left: 1rem;
     height: 6rem; 
     width: 36rem;     
     justify-self: center;
@@ -84,14 +85,14 @@
 .section-form__h3{
 
     font-size: 3rem;
-    font-weight: 200;
-    margin: 4.5rem;
+    font-weight: 300;
+    margin: 2rem;
     color: teal;
 }
 .section-form__h2{
     font-size: 5rem;
-    font-weight: 300;
-    margin-bottom: 5rem;
+    font-weight: 400;
+    margin-bottom: 3rem; 
     text-transform: uppercase;
     color: teal;
 }

@@ -1,6 +1,6 @@
 .section-newsfeed{
     background-color: white;
-    height: 65rem;
+    height: 60rem;
    // height: max-content;
     width: 96vw;   
     position: relative;
@@ -11,6 +11,7 @@
         width: max-content;
         margin-left: 55vw;         
         padding: 2rem;
+        margin-top: 2rem;
         text-align: center;
         h2{
             font-size: 5rem;
@@ -42,7 +43,7 @@
 }
 .section-newsfeed__containers{
     position: absolute;
-    top: 48%;
+    top: 52%;
     left: 55.5%;                               
     transform: translate(-50%,-50%);
     height: 44rem;
