@@ -49,12 +49,19 @@ body {
   backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
-    font-size: 5.6rem;
+    font-size: 5.4rem;
     font-weight: 400;
-    letter-spacing: .5rem; }
+    letter-spacing: .9rem; }
     @media only screen and (max-width: 82em) {
       .heading-primary--main {
-        font-size: 5rem; } }
+        font-size: 4.5rem;
+        letter-spacing: .6rem; } }
+    @media only screen and (max-width: 53.15em) {
+      .heading-primary--main {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 42em) {
+      .heading-primary--main {
+        font-size: 3rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -88,7 +95,7 @@ body {
     letter-spacing: 1.2rem;
     margin-bottom: -2rem; }
   100% {
-    letter-spacing: .5rem; } }
+    letter-spacing: .6rem; } }
 
 @keyframes text-sub {
   0% {
@@ -252,10 +259,13 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), url(../../resources/images/header-bg.jpg);
   filter: brightness(150%);
   background-size: cover;
-  background-position: left;
+  background-position: top;
   display: grid;
   grid-template-rows: min-content 1fr;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      background-position: left; } }
   .header__text {
     display: flex;
     align-items: center;
@@ -283,6 +293,9 @@ body {
     margin: 1rem; }
   .header__text--main {
     animation: text-main 5.2s; }
+    @media only screen and (max-width: 48.75em) {
+      .header__text--main {
+        animation: card-fade-in-up 5.2s; } }
   .header__text-seperator {
     display: grid;
     grid-template-columns: minmax(11rem, min-content) max-content minmax(12.5rem, min-content);
@@ -439,9 +452,11 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-about {
   margin-bottom: 5rem;
   padding: 3rem 5vw;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 .section-locations {
+  overflow: hidden;
   margin-top: -13rem;
   padding: 6rem 0 4rem 0;
   background-image: linear-gradient(to bottom, #ECEFF1, #ECEFF1);
@@ -553,8 +568,8 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     fill: teal; }
 
 .icon-form {
-  height: 3rem;
-  width: 3rem;
+  height: 2.2rem;
+  width: 2.2rem;
   margin: .5rem;
   margin-right: 1rem;
   fill: #646161; }

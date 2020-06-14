@@ -3,7 +3,11 @@
     background-image: linear-gradient(to bottom ,rgba(0,0,0,.35),rgba(0,0,0,.7)),url(../../resources/images/header-bg.jpg);   
     filter: brightness(150%);      
     background-size: cover;      
-    background-position: left;                               
+    background-position: top;       
+  
+    @media only screen and (max-width: 75em)  { 
+        background-position: left;            
+    }
           
     display: grid; 
     grid-template-rows: min-content 1fr;
@@ -12,8 +16,9 @@
     &__text {
          display: flex;
          align-items: center;
-         justify-content: center;  
-         flex-direction: column;        
+         justify-content: center;   
+         flex-direction: column;   
+
     }
 
       
@@ -50,7 +55,12 @@
    }
 
    &__text--main {
-       animation: text-main 5.2s;  
+       animation: text-main 5.2s; 
+       
+       @media only screen and (max-width: 48.75em) { 
+       animation: card-fade-in-up 5.2s;     
+
+       }
    }
 
    &__text-seperator {   
