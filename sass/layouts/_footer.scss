@@ -5,11 +5,9 @@
     text-align: center;   
     overflow: hidden;    
 
-    &__header {
-        color: white;
-        position: relative;
+        //position: relative;
          
-        &::before,
+        /*&::before,
         &::after { 
             position: absolute;
             top: 50%;  
@@ -25,14 +23,80 @@
         }
         &::after { 
             margin-left: 2.5rem;       
-        }
-    }
+        }*/
+    
  
     &__content {   
+        margin-top: 4rem;
         display: grid;                      
-        grid-template-columns: repeat(3, minmax(300px,1fr));  
+        grid-template-columns: repeat(3, minmax(300px,1fr));
         grid-auto-rows: 10rem;    
-        grid-gap:2rem; 
+        grid-gap:1rem; 
+        justify-content: space-around;
         
     }
 }  
+.block-1{
+    padding-top: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2;
+    border-top: 2px solid white;
+
+    &__span{
+        font-size: 2rem;
+        line-height: 3;
+    }
+}
+
+.block-2{
+    &__header {
+        color: white;
+        margin-bottom: 8rem;
+    } 
+    &__icons{
+        position:  relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 200%;
+            left: 50%;
+            width: 2px;
+            height: 5rem;
+            background-color: white;
+        }
+    }
+    &__contact-info{
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 10rem;
+        span{
+            font-size: 2rem;
+            line-height: 3;
+        }
+    }
+}
+
+.block-3{
+    color: white;
+    padding-top: 3rem;
+    font-size:2rem;
+    line-height: 3;
+    border-top: 2px solid white;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+        justify-content: center;
+        grid-column-gap: 3.5rem;
+        
+    }
+    li{
+        font-size: 1.5rem;
+        line-height: 2;
+        text-align: start;
+        a{
+            text-decoration: none;  
+            color: white;
+        }
+    }
+}
