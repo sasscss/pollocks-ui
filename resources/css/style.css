@@ -604,78 +604,156 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     opacity: 1; }
 
 .section-newsfeed {
-  background-image: url(../../resources/images/001_paper_2872x2592_all-free-download.com.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column; }
+  background-color: white;
+  height: 65rem;
+  width: 100vw;
+  position: relative;
+  padding: 0;
+  margin: 0; }
+  .section-newsfeed__header {
+    width: max-content;
+    margin-left: 50%;
+    padding: 2rem;
+    text-align: center; }
+    .section-newsfeed__header h2 {
+      font-size: 5rem;
+      color: #8b0000;
+      font-weight: 400; }
+    .section-newsfeed__header h3 {
+      text-transform: uppercase;
+      color: #8b0000; }
+  .section-newsfeed__button {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 72%;
+    left: 25%;
+    color: #8b0000;
+    text-decoration: none; }
 
-.section-newsfeed__container__1 {
-  max-width: 120rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-self: center;
-  align-self: center;
-  margin-bottom: 5rem; }
-  .section-newsfeed__container__1__image {
-    height: 35rem;
-    width: 55%;
-    background-image: url(../../resources/images/n4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    margin-left: 8rem; }
-  .section-newsfeed__container__1__news {
-    font-size: 2rem;
-    width: 45%;
-    height: 35rem;
-    border: 3px solid #9D2235;
-    align-self: center;
-    justify-self: center;
-    position: relative;
-    margin: 8rem 0 0 -10rem;
-    padding: 3rem 3rem 3rem 12rem; }
-    .section-newsfeed__container__1__news__button {
-      height: 8rem;
-      width: 10rem;
-      background-color: #9D2235;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      border: none; }
+.section-newsfeed__containers {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 44rem;
+  width: 80rem;
+  overflow: hidden; }
 
-.section-newsfeed__container__2 {
-  max-width: 120rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-self: center;
-  align-self: center; }
-  .section-newsfeed__container__2__image {
-    height: 35rem;
-    width: 55%;
-    background-image: url(../../resources/images/n4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover; }
-  .section-newsfeed__container__2__news {
-    font-size: 2rem;
-    width: 45%;
-    height: 35rem;
-    border: 3px solid #9D2235;
-    align-self: center;
-    justify-self: center;
-    position: relative;
-    margin: 8rem -10rem 0 8rem;
-    padding: 3rem 8rem 3rem 3rem; }
-    .section-newsfeed__container__2__news__button {
-      height: 8rem;
-      width: 10rem;
-      background-color: #9D2235;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      border: none; }
+.section-newsfeed__container {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .section-newsfeed__container__1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    visibility: hidden; }
+    .section-newsfeed__container__1__image {
+      height: calc(100% - 8rem);
+      width: 50%;
+      background-image: url(../../resources/images/a3.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8); }
+    .section-newsfeed__container__1__news {
+      height: calc(100% - 8rem);
+      width: 50%;
+      border: 2px solid #8b0000;
+      padding: 3rem 3rem 3rem 8rem;
+      margin-left: -6rem;
+      margin-top: 6rem;
+      position: relative; }
+  .section-newsfeed__container__2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    visibility: hidden; }
+    .section-newsfeed__container__2__image {
+      height: calc(100% - 8rem);
+      width: 50%;
+      background-image: url(../../resources/images/a4.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8); }
+    .section-newsfeed__container__2__news {
+      height: calc(100% - 8rem);
+      width: 50%;
+      border: 2px solid #8b0000;
+      padding: 3rem 3rem 3rem 8rem;
+      margin-left: -6rem;
+      margin-top: 6rem;
+      position: relative; }
+      .section-newsfeed__container__2__news__button {
+        height: 6rem;
+        width: 6rem;
+        background-color: #8b0000;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+  .section-newsfeed__container__3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    visibility: hidden; }
+    .section-newsfeed__container__3__image {
+      height: calc(100% - 8rem);
+      width: 50%;
+      background-image: url(../../resources/images/a2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8); }
+    .section-newsfeed__container__3__news {
+      height: calc(100% - 8rem);
+      width: 50%;
+      border: 2px solid #8b0000;
+      padding: 3rem 3rem 3rem 8rem;
+      margin-left: -6rem;
+      margin-top: 6rem;
+      position: relative; }
+      .section-newsfeed__container__3__news__button {
+        height: 6rem;
+        width: 6rem;
+        background-color: #8b0000;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+
+.pre, .next {
+  height: 6rem;
+  width: 3rem;
+  border: none;
+  position: absolute;
+  cursor: pointer; }
+
+.pre {
+  bottom: 0;
+  left: 0;
+  background-color: #8b0000; }
+
+.next {
+  bottom: 0;
+  left: 3rem;
+  background-color: pink; }
+
+#c1:checked ~ #one,
+#c2:checked ~ #two,
+#c3:checked ~ #three {
+  z-index: 9;
+  visibility: visible; }
 
 .section-documents {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.95) 45%, rgba(0, 0, 0, 0.6) 70%), url(../../resources/images/sectionimg.jpg);
