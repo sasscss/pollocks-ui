@@ -62,6 +62,9 @@ body {
     @media only screen and (max-width: 42em) {
       .heading-primary--main {
         font-size: 3rem; } }
+    @media only screen and (max-width: 26em) {
+      .heading-primary--main {
+        font-size: 2rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -283,7 +286,7 @@ body {
       border: none; }
   .header__logo-container {
     background-color: rgba(255, 255, 255, 0.9);
-    filter: brightness(65%);
+    filter: brightness(66%);
     margin: 4vh;
     justify-self: start;
     border-radius: 50%;
@@ -333,7 +336,7 @@ body {
   .navigation__button {
     background-color: #fff;
     height: 5rem;
-    width: 5rem;
+    width: 5.5rem;
     position: fixed;
     top: 10vh;
     right: 0;
