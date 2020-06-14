@@ -946,7 +946,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   margin: 0; }
   .section-newsfeed__header {
     width: max-content;
-    margin-left: 50vw;
+    margin-left: 55vw;
     padding: 2rem;
     text-align: center; }
     .section-newsfeed__header h2 {
@@ -959,7 +959,6 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     .section-newsfeed__header h3 {
       text-transform: uppercase;
       color: #8b0000;
-      border-bottom: 1.5px solid #8b0000;
       display: inline-block;
       margin: 0 auto; }
       @media only screen and (max-width: 32em) {
@@ -997,7 +996,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   z-index: -1;
   visibility: hidden; }
   .section-newsfeed__container__image {
-    height: calc(100% - 8rem);
+    height: calc(100% - 8.4rem);
     width: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1024,20 +1023,21 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   width: 3rem;
   border: none;
   position: absolute;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #8b0000; }
   .pre svg, .next svg {
     height: 100%;
-    width: 100%;
-    fill: #571010; }
-    .pre svg :hover, .next svg :hover {
-      transform: scale(1.12); }
+    margin-top: -2px;
+    fill: white; }
+  .pre :hover, .next :hover {
+    background-color: #a73838; }
 
 .pre {
   bottom: 0;
   left: 0; }
 
 .next {
-  left: 3rem;
+  left: 2.9rem;
   bottom: 0; }
 
 #c1:checked ~ #one,
