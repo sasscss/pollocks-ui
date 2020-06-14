@@ -18,19 +18,22 @@
 
       
     a {
-                text-decoration: none;
+            text-decoration: none;
             position: absolute;
-            top: 90vh;      
+            top: 90vh;          
             left: 47%;   
             color: white;
-            font-size: 1.5rem;   
-               
-            ::after {
-                content: "dfgdfgdf";
+            font-size: 1.5rem; 
+        
+            
+            :hover,
+            :active {
+
+                border: none;
             }
+           
+        }
      
-    }
-   
    &__logo-container {  
       background-color: rgba(255, 255, 255, 0.9);                                           
        filter: brightness(65%);            
@@ -89,8 +92,3 @@
    }
   
 }    
-
-.discover-now{
-   
-
-}

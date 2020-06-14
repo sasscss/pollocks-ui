@@ -268,8 +268,9 @@ body {
     left: 47%;
     color: white;
     font-size: 1.5rem; }
-    .header a ::after {
-      content: "dfgdfgdf"; }
+    .header a :hover,
+    .header a :active {
+      border: none; }
   .header__logo-container {
     background-color: rgba(255, 255, 255, 0.9);
     filter: brightness(65%);
@@ -436,9 +437,8 @@ body {
 ORDER - base + typography + genreal layouts + grid  > page layout > components
 */
 .section-about {
-  margin-top: -10rem;
   margin-bottom: 5rem;
-  padding: 13rem 3rem 5vw 5rem;
+  padding: 3rem 5vw;
   background-size: cover;
   overflow: hidden; }
 
