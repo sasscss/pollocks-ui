@@ -389,8 +389,8 @@ body {
     background-color: white;
     z-index: 1500;
     height: 100vh;
-    margin-right: -33rem;
-    width: 33rem;
+    margin-right: -32rem;
+    width: 32rem;
     transition: all .55s linear; }
   .navigation__list {
     display: block;
@@ -419,7 +419,7 @@ body {
     margin-right: 0; }
   .navigation__checkbox:checked ~ .navigation__button--menu,
   .navigation__checkbox:checked ~ .navigation__button--contact-us {
-    margin-right: 33rem; }
+    margin-right: 32rem; }
   .navigation__icon {
     position: relative;
     margin-top: 2.6rem; }

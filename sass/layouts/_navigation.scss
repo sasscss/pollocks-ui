@@ -62,9 +62,9 @@
         // clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
         z-index: 1500;  
         height: 100vh;  
-        margin-right: -33rem;     
+        margin-right: -32rem;     
             
-        width:33rem;          
+        width:32rem;           
         transition: all .55s linear;         
         
     } 
@@ -124,7 +124,7 @@
     } 
     &__checkbox:checked ~ &__button--menu,
     &__checkbox:checked ~ &__button--contact-us {
-       margin-right: 33rem; 
+       margin-right: 32rem;  
     }
        
 
