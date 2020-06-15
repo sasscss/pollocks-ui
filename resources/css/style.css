@@ -305,7 +305,7 @@ body {
     flex-direction: column; }
   .header a:link, .header a:visited {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-decoration: none;
     position: absolute;
     top: 92vh;
@@ -315,10 +315,10 @@ body {
     letter-spacing: .7px; }
   .header a::after {
     position: absolute;
-    top: 130%;
+    top: 140%;
     left: 45.5%;
     content: "";
-    height: 5rem;
+    height: 6rem;
     width: 1.5px;
     background-color: white; }
   .header a:hover, .header a:active {

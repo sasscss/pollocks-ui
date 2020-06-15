@@ -25,22 +25,22 @@
         &:link, 
            &:visited {    
             font-weight: 400;   
-            font-size: 1.5rem;      
+            font-size: 1.6rem;        
             text-decoration: none;
             position: absolute;
-            top: 92vh;           
+            top: 92vh;                
             left: 46.7%;                 
-            color: #fff;   
+            color: #fff;     
             font-size: 1.5rem; 
             letter-spacing: .7px;           
            }       
            
            &::after {
-               position: absolute;
-               top:130%;
+               position: absolute; 
+               top:140%;
                left: 45.5%;    
                content: ""; 
-               height: 5rem;   
+               height: 6rem;           
                width: 1.5px;         
                background-color: white;  
            }
