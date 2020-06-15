@@ -9,10 +9,9 @@
         background-position: left;            
     }
           
-    display: grid; 
-    grid-template-rows: min-content 1fr;
-    position: relative; 
-    overflow: hidden;   
+    display: grid;  
+    grid-template-rows: min-content 1fr;     
+    position: relative;        
     &__text {  
          display: flex;
          align-items: center;

@@ -265,8 +265,7 @@ body {
   background-position: top;
   display: grid;
   grid-template-rows: min-content 1fr;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   @media only screen and (max-width: 75em) {
     .header {
       background-position: left; } }
@@ -388,7 +387,7 @@ body {
     margin-top: 2.6rem; }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
-      height: .22rem;
+      height: .25rem;
       background-color: #000;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
@@ -534,14 +533,12 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-about {
   margin-bottom: 5rem;
   padding: 3rem 5vw;
-  background-size: cover;
-  overflow: hidden; }
+  background-size: cover; }
   @media only screen and (max-width: 68.5em) {
     .section-about {
       padding: 3rem 5vw 5.5rem 5vw; } }
 
 .section-locations {
-  overflow: hidden;
   margin-top: -13rem;
   padding: 6rem 0 4rem 0;
   background-image: linear-gradient(to bottom, #ECEFF1, #ECEFF1);
@@ -552,8 +549,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   padding-bottom: 2rem;
   background-image: linear-gradient(to bottom, #021220 0%, #021220 60%, #fff 55%);
   margin-top: -8rem;
-  padding: 8rem;
-  overflow: hidden; }
+  padding: 8rem; }
   @media only screen and (max-width: 79.3em) {
     .section-academics {
       background-image: linear-gradient(to bottom, #002447, #002447); } }
