@@ -49,9 +49,9 @@ body {
   backface-visibility: hidden; }
   .heading-primary--main {
     display: block;
-    font-size: 5.4rem;
+    font-size: 5.3rem;
     font-weight: 400;
-    letter-spacing: .9rem; }
+    letter-spacing: .8rem; }
     @media only screen and (max-width: 82em) {
       .heading-primary--main {
         font-size: 4.5rem;
@@ -98,7 +98,7 @@ body {
     letter-spacing: 1.2rem;
     margin-bottom: -2rem; }
   100% {
-    letter-spacing: .6rem; } }
+    letter-spacing: .8rem; } }
 
 @keyframes text-sub {
   0% {
@@ -304,16 +304,25 @@ body {
     justify-content: center;
     flex-direction: column; }
   .header a:link, .header a:visited {
-    font-family: sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     text-decoration: none;
     position: absolute;
     top: 90vh;
-    left: 47%;
-    color: white;
+    left: 46.7%;
+    color: #fff;
     font-size: 1.5rem; }
+  .header a::after {
+    position: absolute;
+    top: 130%;
+    left: 45%;
+    content: "";
+    height: 5rem;
+    width: 1.5px;
+    background-color: white; }
   .header a:hover, .header a:active {
-    border-bottom: 1px solid currentColor; }
+    transform: scale(1.03); }
+    .header a:hover::after, .header a:active::after {
+      transform: scale(1); }
   .header__logo-container {
     background-color: white;
     filter: brightness(66%);
@@ -327,34 +336,11 @@ body {
     height: 9rem;
     margin: 1rem; }
   .header__text--main {
+    transform: translateY(5%);
     animation: text-main 5.2s; }
     @media only screen and (max-width: 48.75em) {
       .header__text--main {
         animation: card-fade-in-up 5.2s; } }
-  .header__text-seperator {
-    display: grid;
-    grid-template-columns: minmax(11rem, min-content) max-content minmax(12.5rem, min-content);
-    align-items: center;
-    justify-self: center;
-    grid-gap: 1rem;
-    color: white;
-    font-size: 2rem;
-    font-weight: 100;
-    letter-spacing: .1rem;
-    animation: text-sub 5.2s; }
-    .header__text-seperator::before, .header__text-seperator::after {
-      align-self: center;
-      content: "";
-      display: inline-block;
-      height: .5px;
-      transition: all .2s;
-      background-color: white; }
-    .header__text-seperator:hover::before {
-      transform: scaleX(1.2) translateX(-2rem);
-      cursor: pointer; }
-    .header__text-seperator:hover::after {
-      transform: scaleX(1.2) translateX(2rem);
-      cursor: pointer; }
 
 .navigation {
   font-family: 'Josefin Sans', sans-serif;
