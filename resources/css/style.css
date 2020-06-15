@@ -305,6 +305,7 @@ body {
     flex-direction: column; }
   .header a:link, .header a:visited {
     font-weight: 400;
+    font-size: 1.5rem;
     text-decoration: none;
     position: absolute;
     top: 90vh;
@@ -314,7 +315,7 @@ body {
   .header a::after {
     position: absolute;
     top: 130%;
-    left: 45%;
+    left: 45.5%;
     content: "";
     height: 5rem;
     width: 1.5px;
