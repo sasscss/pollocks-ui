@@ -308,10 +308,11 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
     position: absolute;
-    top: 90vh;
+    top: 92vh;
     left: 46.7%;
     color: #fff;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    letter-spacing: .7px; }
   .header a::after {
     position: absolute;
     top: 130%;
@@ -530,16 +531,27 @@ body {
     font-size: 1.5rem;
     line-height: 2;
     text-align: start; }
-    .block-3 li a {
+    .block-3 li a:link, .block-3 li a:visited {
       text-decoration: none;
-      color: white; }
+      color: white;
+      display: inline-block; }
+    .block-3 li a:hover, .block-3 li a:active {
+      transform: scale(1.07) translateX(4%); }
 
 .developer {
   color: whitesmoke;
   text-align: start;
   bottom: 3.5rem;
-  right: 3rem;
+  right: 4rem;
   position: absolute; }
+  .developer::before {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    content: "";
+    top: -1rem;
+    left: 0; }
   .developer p {
     font-size: 1.1rem;
     color: #c0b9ab; }
@@ -547,9 +559,10 @@ body {
       font-size: 1.3rem;
       text-decoration: none;
       color: white;
-      display: inline-block; }
+      display: inline-block;
+      letter-spacing: 1px;
+      margin: 3px; }
     .developer p a:hover, .developer p a:active {
-      font-size: 1.5rem;
       text-decoration: none;
       color: white;
       display: inline-block;

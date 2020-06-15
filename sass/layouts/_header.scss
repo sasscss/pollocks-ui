@@ -28,10 +28,11 @@
             font-size: 1.5rem;      
             text-decoration: none;
             position: absolute;
-            top: 90vh;          
+            top: 92vh;           
             left: 46.7%;                 
             color: #fff;   
-            font-size: 1.5rem;            
+            font-size: 1.5rem; 
+            letter-spacing: .7px;           
            }       
            
            &::after {
@@ -40,7 +41,7 @@
                left: 45.5%;    
                content: ""; 
                height: 5rem;   
-               width: 1.5px;      
+               width: 1.5px;         
                background-color: white;  
            }
 
