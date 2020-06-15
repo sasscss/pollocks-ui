@@ -11,7 +11,7 @@
         display: block; 
     }
 
-     &__button {
+     &__button--menu {
         background-color:#fff;      
         height: 5rem;                         
         width: 5.5rem;                     
@@ -20,17 +20,34 @@
         right: 0;    
         z-index: 2000;  
       //  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.13);
-        text-align: center;
+        text-align: center; 
         cursor: pointer; 
         margin-right: -1px;       
         transition: all .8s linear; 
-        // @include respond(tab-port) { 
-        //     height: 5rem;
-        //     width: 5rem;
-        //     position: fixed;
-        //     top: 4.5rem;
-        //     right: 5rem;
-        //   }
+       
+    }
+    &__button--contact-us { 
+        background-color:rgb(211, 206, 206);      
+        height: 5rem;                         
+        width: 5.5rem;                     
+        position: fixed;  
+        top: calc(10vh + 5rem);                 
+        right: 0;     
+        z-index: 2000;  
+        cursor: pointer; 
+        margin-right: -1px;          
+        transition: all .8s linear;  
+        animation: contact-icon 2.5s linear;     
+  
+        svg {
+            fill: black; 
+            height: 90%;  
+            width: 90%;        
+        }
+ 
+        &:hover svg {    
+            transform: scale(1.06) translateY(2%);  
+        }
     }
 
  
@@ -105,7 +122,8 @@
         height: 100vh;   
         margin-right: 0; 
     } 
-    &__checkbox:checked ~ &__button {
+    &__checkbox:checked ~ &__button--menu,
+    &__checkbox:checked ~ &__button--contact-us {
        margin-right: 33rem; 
     }
        
@@ -115,7 +133,7 @@
 
     &__icon {
         position: relative;
-        margin-top: 2.6rem; 
+        margin-top: 2.6rem;   
 
         // @include respond(tab-port) { 
         //     margin-top: 2.5rem; 
@@ -125,7 +143,7 @@
         &::before,  
         &::after { 
             width: 3rem; 
-            height: .22rem;      
+            height: .25rem;          
             background-color: #000; 
             display: inline-block;      
         } 
@@ -142,19 +160,19 @@
         &::before{top: .7rem;}
     }
 
-    &__button:hover &__icon::before { top: .9rem;}
-    &__button:hover &__icon::after { top: -.9rem; }  
+    &__button--menu:hover &__icon::before { top: .9rem;}
+    &__button--menu:hover &__icon::after { top: -.9rem; }  
 
-    &__checkbox:checked + &__button &__icon { 
+    &__checkbox:checked + &__button--menu &__icon { 
         background-color: transparent; 
         &::before { 
             top: 0rem; 
             transform: rotate(135deg); 
-        } 
+        }            
         &::after { 
             top: 0rem;
             transform: rotate(-135deg);  
-        } 
+        }   
         
     }
 } 

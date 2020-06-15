@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('.js--wp-2-1').waypoint(function(direction){
         $('.js--wp-2-1').addClass('animate__animated animate__fadeInRight');
     },{    
-        offset:"65%"                
+        offset:"70%"                 
     });  
     
     // // js--wp-2-1 2nd sec 2nd component    
@@ -94,6 +94,25 @@ $(document).ready(function(){
     },{        
         offset:"73%"                  
     }); 
+    $('.js--wp-5-1').waypoint(function(direction){
+        $('.js--wp-5-1').addClass('animate__animated  card-fade-in-up');
+    },{         
+        offset:"60%"                   
+    });
+    $('.js--wp-5-2-1').waypoint(function(direction){ 
+        $('.js--wp-5-2-1').addClass('animate__animated  animate__fadeInLeft');
+    },{         
+        offset:"60%"                  
+    }); $('.js--wp-5-2-2').waypoint(function(direction){
+        $('.js--wp-5-2-2').addClass('animate__animated  animate__fadeInRight');
+    },{         
+        offset:"62%"                   
+    }); $('.js--wp-5-2-3').waypoint(function(direction){
+        $('.js--wp-5-2-3').addClass('animate__animated  card-fade-in-up');
+    },{          
+        offset:"86%"                   
+    }); 
+    
 
     $('.js--wp-7-1').waypoint(function(direction){
         $('.js--wp-7-1').addClass('animate__animated  card-fade-in-up');
@@ -110,6 +129,32 @@ $(document).ready(function(){
     },{        
         offset:"68%"                 
     }); 
+    $('.js--wp-8-1').waypoint(function(direction){
+        $('.js--wp-8-1').addClass('animate__animated  card-fade-in-up');
+    },{        
+        offset:"68%"                 
+    }); 
+    $('.js--wp-8-2-1').waypoint(function(direction){
+        $('.js--wp-8-2-1').addClass('animate__animated  animate__fadeInLeft'); 
+    },{        
+        offset:"68%"                 
+    }); 
+    $('.js--wp-8-2-2').waypoint(function(direction){
+        $('.js--wp-8-2-2').addClass('animate__animated  card-fade-in-up');
+    },{        
+        offset:"60%"                  
+    });  
+    $('.js--wp-8-2-3').waypoint(function(direction){
+        $('.js--wp-8-2-3').addClass('animate__animated  animate__fadeInRight');
+    },{        
+        offset:"68%"                 
+    }); 
+    $('.js--wp-8-3').waypoint(function(direction){
+        $('.js--wp-8-3').addClass('animate__animated  card-fade-in-up');
+    },{        
+        offset:"100%"                      
+    });     
+      
 
     $('.counter').counterUp({ 
         delay: 40,    

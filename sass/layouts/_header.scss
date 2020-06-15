@@ -4,15 +4,14 @@
     filter: brightness(150%);      
     background-size: cover;      
     background-position: top;       
-  
+    overflow: hidden;   
     @media only screen and (max-width: 75em)  { 
         background-position: left;            
     }
           
-    display: grid; 
-    grid-template-rows: min-content 1fr;
-    position: relative; 
-    overflow: hidden;   
+    display: grid;  
+    grid-template-rows: min-content 1fr;     
+    position: relative;        
     &__text {  
          display: flex;
          align-items: center;
@@ -23,27 +22,46 @@
 
       
     a {
+        &:link, 
+           &:visited {    
+            font-weight: 400;   
+            font-size: 1.5rem;      
             text-decoration: none;
             position: absolute;
             top: 90vh;          
-            left: 47%;   
-            color: white;
-            font-size: 1.5rem; 
-        
-            
-            :hover,
-            :active {
+            left: 46.7%;                 
+            color: #fff;   
+            font-size: 1.5rem;            
+           }       
+           
+           &::after {
+               position: absolute;
+               top:130%;
+               left: 45.5%;    
+               content: ""; 
+               height: 5rem;   
+               width: 1.5px;      
+               background-color: white;  
+           }
 
-                border: none;
+            &:hover,     
+            &:active {                   
+                transform: scale(1.03);     
+                &::after {
+                    transform: scale(1);   
+                }  
+               
             }
            
         }
      
    &__logo-container {  
-      background-color: rgba(255, 255, 255, 0.9);                                           
+      background-color: rgb(255, 255, 255);                                               
        filter: brightness(66%);            
-       margin: 4vh;            
-       justify-self: start;                 
+       margin: 4vh;                  
+       height: 11.2rem;
+       width:11.2rem;                            
+       justify-self: start;                   
        border-radius: 50%;   
        border: 1px solid white;        
 
@@ -52,9 +70,10 @@
    &__logo {        
         height: 9rem;
         margin: 1rem;        
-   }
+   }  
 
    &__text--main {
+       transform: translateY(5%);  
        animation: text-main 5.2s; 
        
        @media only screen and (max-width: 48.75em) { 
@@ -63,42 +82,43 @@
        }
    }
 
-   &__text-seperator {   
-       display: grid;    
-       grid-template-columns: minmax(11rem, min-content) max-content minmax(12.5rem, min-content) ;         
-       align-items: center;  
-        justify-self: center; 
-       grid-gap: 1rem;  
-       color: rgb(255, 255, 255);  
-       font-size: 2rem;    
-       font-weight: 100;                         
-       letter-spacing: .1rem;    
-       animation: text-sub 5.2s;    
+//    &__text-seperator {   
+//        display: grid;     
+//       // grid-template-columns: minmax(11rem, min-content) max-content minmax(12.5rem, min-content) ;         
+//        align-items: center;  
+//         justify-self: center; 
+//        grid-gap: 1rem;  
+//        color: rgb(255, 255, 255);  
+//        font-size: 2rem;    
+//        font-weight: 100;                         
+//        letter-spacing: .1rem;   
+//        transform: translateY(5%);                
+//        animation: text-sub 5.2s;    
             
-           &::before,
-           &::after {
-               align-self: center;   
-               content: "";           
-               display: inline-block;
-               height: .5px;          
-               transition: all .2s; 
-               background-color: white; 
-           }
+//         //    &::before,
+//         //    &::after {
+//         //        align-self: center;   
+//         //        content: "";           
+//         //        display: inline-block;
+//         //        height: .5px;          
+//         //        transition: all .2s; 
+//         //        background-color: white; 
+//         //    }
        
-           &:hover {
+//            &:hover {
 
-               &::before {   
-                   transform: scaleX(1.2) translateX(-2rem); 
-                   cursor: pointer;
-           }
-           }
-           &:hover{ 
-                &::after { 
-               transform: scaleX(1.2) translateX(2rem); 
-               cursor: pointer; 
-           }
-       }
+//                &::before {   
+//                    transform: scaleX(1.2) translateX(-2rem); 
+//                    cursor: pointer;
+//            }
+//            }
+//            &:hover{ 
+//                 &::after { 
+//                transform: scaleX(1.2) translateX(2rem); 
+//                cursor: pointer; 
+//            }
+//        }
    
-   }
+//    }
   
 }    

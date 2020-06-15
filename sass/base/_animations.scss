@@ -26,8 +26,8 @@
        
      
     }  
-    100% {     
-        letter-spacing: .6rem ;                     
+    100% {      
+        letter-spacing: .8rem ;                     
     }
 }
 
@@ -57,6 +57,22 @@
     transform: scale(1); 
   }
 }
+
+
+@keyframes contact-icon {
+  0% {      
+      opacity: 0;
+    transform: translateX(-100%);
+  } 
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0); 
+  }
+}
+
 
  
 @keyframes card-fade-in-right {
@@ -112,15 +128,23 @@
 .js--wp-3-2-1, 
 .js--wp-3-2-2,
 .js--wp-4-1,
+.js--wp-5-1,
+.js--wp-5-2-1,
+.js--wp-5-2-2,  
+.js--wp-5-2-3,  
 .js--wp-4-2-1, 
 .js--wp-4-2-2,
 .js--wp-4-2-3, 
 .js--wp-4-2-4,
 .js--wp-7-1, 
 .js--wp-7-2, 
-.js--wp-7-3  
-{  
-    opacity: 0;            
+.js--wp-7-3,
+.js--wp-8-1, 
+.js--wp-8-2-1,
+.js--wp-8-2-2, 
+.js--wp-8-2-3, 
+.js--wp-8-3{      
+    opacity: 0;                
 }      
 
 .js--wp-1-1.animate__animated,  
@@ -135,9 +159,19 @@
 .js--wp-4-2-2.animate__animated,
 .js--wp-4-2-3.animate__animated,
 .js--wp-4-2-4.animate__animated,
+.js--wp-5-1.animate__animated,
+.js--wp-5-2-1.animate__animated,   
+.js--wp-5-2-2.animate__animated, 
+.js--wp-5-2-3.animate__animated,   
 .js--wp-7-1.animate__animated,
 .js--wp-7-2.animate__animated,
-.js--wp-7-3.animate__animated{   
+.js--wp-7-3.animate__animated
+.js--wp-8-1.animate__animated,
+.js--wp-8-2-1.animate__animated,
+.js--wp-8-2-2.animate__animated,
+.js--wp-8-2-3.animate__animated,
+.js--wp-8-3.animate__animated
+{    
 
     opacity: 1;  
 } 

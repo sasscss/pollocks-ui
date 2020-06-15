@@ -2,14 +2,14 @@
     margin-bottom: 5rem;       
     padding: 3rem 5vw;            
      
-    background-size: cover;                        
-    overflow: hidden;
+    background-size: cover;                          
+   // overflow: hidden;
     @include respond(tab-port) {
         padding: 3rem 5vw 5.5rem 5vw;    
     }             
 }    
-          
-.section-locations{   
+           
+.section-locations{     
     overflow: hidden;  
     margin-top: -13rem;       
     padding: 6rem 0 4rem 0;          
@@ -18,15 +18,15 @@
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 88%);   
 } 
 
-.section-academics{
+.section-academics{ 
    padding-bottom: 2rem;         
     background-image: linear-gradient(to bottom,   
     #021220 0%,
     #021220 60%,         
-    #fff 55%);      
+    #fff 55%);        
     margin-top: -8rem; 
     padding: 8rem;               
-    overflow: hidden;        
+   // overflow: hidden;        
     @media only screen and (max-width: 79.3em) {                         
         background-image: linear-gradient(to bottom, #002447,  #002447 );
     }   

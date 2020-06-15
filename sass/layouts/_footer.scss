@@ -104,19 +104,17 @@
 
 .developer {
     color: whitesmoke; 
-    text-align: start;  
-    bottom: 4rem;    
-    left: 3rem;   
+    text-align: start;     
+    bottom: 3.5rem;    
+    right: 3rem;     
     position: absolute;  
-    p{
-        font-size: 1.2rem;  
-        color: rgb(206, 199, 184);     
-        a {
-           
-            
+    p{   
+        font-size: 1.1rem;      
+        color: rgb(192, 185, 171);     
+        a {            
             &:link,
             &:visited {
-                font-size: 1.5rem; 
+                font-size: 1.3rem; 
                 text-decoration: none; 
                 color: white; 
                 display: inline-block;      

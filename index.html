@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="apple-touch-icon" sizes="57x57" href="./resources/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./resources/images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./resources/images/favicons/apple-icon-72x72.png">
@@ -21,7 +22,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
@@ -35,8 +35,13 @@
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-        <label for="navi-toggle" class="navigation__button">
+        <label for="navi-toggle" class="navigation__button--menu">
             <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <label for="navi-toggle" class="navigation__button--contact-us">
+            <svg >
+                <use xlink:href="resources/images/icons/sprite.svg#icon-mail-envelope-closed"></use>
+            </svg>
         </label>
         <nav class="navigation__nav" >    
             
@@ -58,7 +63,7 @@
         </div>
        <div class="header__text">
         <h1 class="heading-primary heading-primary--main header__text--main">celebrate the joy of learning</h1>
-        <p class="header__text-seperator">pollocks</p>   
+        <!-- <p class="header__text-seperator">pollocks</p>    -->
        </div>
         <a href="#section-about" class="discover-now">discover now</a>
     </header>
@@ -239,9 +244,9 @@
     </section>
    
     <section class="section-newsfeed">
-        <div class="section-newsfeed__header">
-            <h2>latest stories</h2>
-            <h3>In Pollocks</h3>
+        <div class="section-newsfeed__header js--wp-5-1">
+            <h2>Latest stories</h2> 
+            <h3>In Pollocks</h3> 
         </div>
        
         <div class="section-newsfeed__containers">
@@ -251,10 +256,10 @@
             <input type="radio" name="containers" id="c2">
             <input type="radio" name="containers" id="c3">
             <div class="section-newsfeed__container " id="one">
-                <div class="section-newsfeed__container__image section-newsfeed__container__image--1">
+                <div class="section-newsfeed__container__image section-newsfeed__container__image--1 js--wp-5-2-1">
 
                 </div>
-                <div class="section-newsfeed__container__news"> 
+                <div class="section-newsfeed__container__news js--wp-5-2-2">  
                     <h3>Pollocks Thoughts Lorem </h3> 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit Iste velit vel expedita nisi assumenda. Ex aperiam beatae at, obcaecati, non voluptatum ipsum vel cum dolor excepturi tempore, perspiciatis quasi mollitia!</p>
                     
@@ -317,7 +322,7 @@
                 
             </div>
             </div>
-            <a href="#" class="section-newsfeed__button">
+            <a href="#" class="section-newsfeed__button js--wp-5-2-3">
                 Show all  &rarr;
             </a>
         </div>
@@ -402,9 +407,9 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="footer__header">POLLOCKS SCHOOL</p> 
+        <!-- <p class="footer__header js--wp-8-1">POLLOCKS SCHOOL</p>  -->
         <div class="footer__content">
-            <div class="block-1">
+            <div class="block-1 js--wp-8-2-1">
 
                 <p><span class="block-1__span">Facilities</span> <br>
                     State-of-the-art laboratories<br>
@@ -415,9 +420,9 @@
                     Playground and Sports Facilities
                 </p>
             </div>
-            <div class="block-2">
+            <div class="block-2 js--wp-8-2-2">
 
-                <p class="block-2__header">pollocks</p>
+                <p class="block-2__header">Pollocks School</p>
                 <div class="block-2__icons">
                     <svg class="icon-form">
                         <use xlink:href="resources/images/icons/sprite.svg#icon-facebook1"></use>
@@ -440,7 +445,7 @@
                     Email. p1@pollocks.in</p>
                 </div>
             </div>
-            <div class="block-3">
+            <div class="block-3 js--wp-8-2-3">
                 <header>Explore</header>
                <ul> 
                 <li><a href="">Home</a></li>
@@ -458,7 +463,7 @@
 
             </div>
         </div>  
-        <div class="developer">
+        <div class="developer js--wp-8-3">      
             <p>© 2020 Pollocks School</p> 
             <p >Designed and developed by <a href="https://twitter.com/aravindSiruvuru">Aravind Siruvuru</a></p>
        
