@@ -160,19 +160,19 @@
         &::before{top: .7rem;}
     }
 
-    &__button:hover &__icon::before { top: .9rem;}
-    &__button:hover &__icon::after { top: -.9rem; }  
+    &__button--menu:hover &__icon::before { top: .9rem;}
+    &__button--menu:hover &__icon::after { top: -.9rem; }  
 
-    &__checkbox:checked + &__button &__icon { 
+    &__checkbox:checked + &__button--menu &__icon { 
         background-color: transparent; 
         &::before { 
             top: 0rem; 
             transform: rotate(135deg); 
-        } 
+        }            
         &::after { 
             top: 0rem;
             transform: rotate(-135deg);  
-        } 
+        }   
         
     }
 } 

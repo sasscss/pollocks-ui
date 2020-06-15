@@ -318,6 +318,8 @@ body {
     background-color: white;
     filter: brightness(66%);
     margin: 4vh;
+    height: 9rem;
+    width: 9rem;
     justify-self: start;
     border-radius: 50%;
     border: 1px solid white; }
@@ -448,16 +450,16 @@ body {
       top: -.7rem; }
     .navigation__icon::before {
       top: .7rem; }
-  .navigation__button:hover .navigation__icon::before {
+  .navigation__button--menu:hover .navigation__icon::before {
     top: .9rem; }
-  .navigation__button:hover .navigation__icon::after {
+  .navigation__button--menu:hover .navigation__icon::after {
     top: -.9rem; }
-  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+  .navigation__checkbox:checked + .navigation__button--menu .navigation__icon {
     background-color: transparent; }
-    .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    .navigation__checkbox:checked + .navigation__button--menu .navigation__icon::before {
       top: 0rem;
       transform: rotate(135deg); }
-    .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    .navigation__checkbox:checked + .navigation__button--menu .navigation__icon::after {
       top: 0rem;
       transform: rotate(-135deg); }
 
