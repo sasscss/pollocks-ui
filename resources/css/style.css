@@ -601,7 +601,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-achivements {
   background-image: linear-gradient(to right, rgba(155, 34, 53, 0.3) 15%, rgba(0, 0, 0, 0.4) 25%, rgba(155, 34, 53, 0.3) 85%), url(../../resources/images/accomplishments-bg.jpg);
   background-attachment: fixed;
-  background-position: center;
+  background-position: 75%;
   background-attachment: fixed;
   background-size: cover;
   background-blend-mode: hard-light;
@@ -1226,12 +1226,12 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     font-size: 2rem; }
 
 .section-documents {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 45%, rgba(157, 34, 53, 0.4) 70%), url(../../resources/images/sectionimg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 45%, rgba(157, 34, 53, 0.4) 70%), url(../../resources/images/accomplishments-bg.jpg);
   min-height: 60rem;
   background-repeat: no-repeat;
   background-blend-mode: hard-light;
   background-size: cover;
-  background-position: bottom;
+  background-position: 20%;
   background-attachment: fixed;
   padding: 3rem;
   display: flex;
