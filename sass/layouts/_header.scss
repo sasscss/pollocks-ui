@@ -34,7 +34,7 @@
             font-size: 1.5rem;  
            }       
             
-            &:hover,
+            &:hover,     
             &:active {                   
 
                 border-bottom: 1px solid currentColor;  
@@ -45,9 +45,9 @@
    &__logo-container {  
       background-color: rgb(255, 255, 255);                                               
        filter: brightness(66%);            
-       margin: 4vh;       
-       height: 9rem;
-       width: 9rem;      
+       margin: 4vh;                  
+       height: 11.2rem;
+       width:11.2rem;                            
        justify-self: start;                 
        border-radius: 50%;   
        border: 1px solid white;        
@@ -57,7 +57,7 @@
    &__logo {        
         height: 9rem;
         margin: 1rem;        
-   }
+   }  
 
    &__text--main {
        animation: text-main 5.2s; 
