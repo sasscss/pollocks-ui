@@ -537,14 +537,14 @@ body {
 .developer {
   color: whitesmoke;
   text-align: start;
-  bottom: 4rem;
-  left: 3rem;
+  bottom: 3.5rem;
+  right: 3rem;
   position: absolute; }
   .developer p {
-    font-size: 1.2rem;
-    color: #cec7b8; }
+    font-size: 1.1rem;
+    color: #c0b9ab; }
     .developer p a:link, .developer p a:visited {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-decoration: none;
       color: white;
       display: inline-block; }
