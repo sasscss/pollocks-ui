@@ -137,17 +137,17 @@ $(document).ready(function(){
     $('.js--wp-8-2-1').waypoint(function(direction){
         $('.js--wp-8-2-1').addClass('animate__animated  animate__fadeInLeft'); 
     },{        
-        offset:"68%"                 
+        offset:"85%"                  
     }); 
     $('.js--wp-8-2-2').waypoint(function(direction){
         $('.js--wp-8-2-2').addClass('animate__animated  card-fade-in-up');
     },{        
-        offset:"60%"                  
+        offset:"85%"                  
     });  
     $('.js--wp-8-2-3').waypoint(function(direction){
         $('.js--wp-8-2-3').addClass('animate__animated  animate__fadeInRight');
-    },{        
-        offset:"68%"                 
+    },{         
+        offset:"85%"                 
     }); 
     $('.js--wp-8-3').waypoint(function(direction){
         $('.js--wp-8-3').addClass('animate__animated  card-fade-in-up');
