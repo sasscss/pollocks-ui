@@ -88,8 +88,8 @@
 
 .button__container{
     position: relative;
-    height:15rem;
-    padding-top: 2rem;
+    height: 10rem;
+    margin-top: 2rem;
 }
 
 .button{
@@ -97,8 +97,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 4rem;
-    width: 12rem;
+    height: 6rem;
+    width: 14rem;
     border-radius: 3px;
     background-color: teal;
     //position: relative;
@@ -107,15 +107,15 @@
 
     &__a{
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: white;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
-        padding-left:2.2rem;
         z-index: 10;
+        text-align: center;
         //background-color: teal;
         //padding:1.6rem 3.8rem;
         //position: relative;
@@ -125,7 +125,7 @@
 
     &::before{
         content: "";
-        background-color: white;
+        background-color: rgb(1, 59, 59);
         height:100%;
         width:100%;
         position: absolute;
@@ -142,5 +142,5 @@
 }
 
 .button:hover .button__a{
-    color: teal;
+    color: white;
 }
