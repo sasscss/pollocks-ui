@@ -122,7 +122,8 @@
         height: 100vh;   
         margin-right: 0; 
     } 
-    &__checkbox:checked ~ &__button {
+    &__checkbox:checked ~ &__button--menu,
+    &__checkbox:checked ~ &__button--contact-us {
        margin-right: 33rem; 
     }
        
@@ -132,7 +133,7 @@
 
     &__icon {
         position: relative;
-        margin-top: 2.6rem; 
+        margin-top: 2.6rem;   
 
         // @include respond(tab-port) { 
         //     margin-top: 2.5rem; 
