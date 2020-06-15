@@ -363,7 +363,7 @@ body {
     text-align: center;
     cursor: pointer;
     margin-right: -1px;
-    transition: all .8s linear; }
+    transition: all .55s linear; }
   .navigation__button--contact-us {
     background-color: #d3cece;
     height: 5rem;
@@ -374,7 +374,7 @@ body {
     z-index: 2000;
     cursor: pointer;
     margin-right: -1px;
-    transition: all .8s linear;
+    transition: all .55s linear;
     animation: contact-icon 2.5s linear; }
     .navigation__button--contact-us svg {
       fill: black;
@@ -391,7 +391,7 @@ body {
     height: 100vh;
     margin-right: -33rem;
     width: 33rem;
-    transition: all .8s linear; }
+    transition: all .55s linear; }
   .navigation__list {
     display: block;
     list-style: none;

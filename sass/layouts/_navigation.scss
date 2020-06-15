@@ -23,7 +23,7 @@
         text-align: center; 
         cursor: pointer; 
         margin-right: -1px;       
-        transition: all .8s linear; 
+        transition: all .55s linear;            
        
     }
     &__button--contact-us { 
@@ -36,7 +36,7 @@
         z-index: 2000;  
         cursor: pointer; 
         margin-right: -1px;          
-        transition: all .8s linear;  
+        transition: all .55s linear;  
         animation: contact-icon 2.5s linear;     
   
         svg {
@@ -65,7 +65,7 @@
         margin-right: -33rem;     
             
         width:33rem;          
-        transition: all .8s linear; 
+        transition: all .55s linear;         
         
     } 
    
