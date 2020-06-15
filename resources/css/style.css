@@ -1031,10 +1031,11 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
     align-content: space-between; }
     .acadamics__card__content h2 {
       flex: 1;
-      align-self: flex-start; }
+      align-self: flex-start;
+      font-size: 1.7rem; }
     .acadamics__card__content p {
       border-top: 1px solid #002447;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 500;
       padding: .5rem 0;
       color: #5f0909; }
