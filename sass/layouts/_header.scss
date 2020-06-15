@@ -22,8 +22,7 @@
 
       
     a {
-       
-           &:link, 
+        &:link, 
            &:visited { 
             font-family:  sans-serif;
             font-weight: 100;   
@@ -46,7 +45,9 @@
    &__logo-container {  
       background-color: rgb(255, 255, 255);                                               
        filter: brightness(66%);            
-       margin: 4vh;            
+       margin: 4vh;       
+       height: 9rem;
+       width: 9rem;      
        justify-self: start;                 
        border-radius: 50%;   
        border: 1px solid white;        
