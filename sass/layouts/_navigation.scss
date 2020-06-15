@@ -11,7 +11,7 @@
         display: block; 
     }
 
-     &__button {
+     &__button--menu {
         background-color:#fff;      
         height: 5rem;                         
         width: 5.5rem;                     
@@ -20,17 +20,34 @@
         right: 0;    
         z-index: 2000;  
       //  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.13);
-        text-align: center;
+        text-align: center; 
         cursor: pointer; 
         margin-right: -1px;       
         transition: all .8s linear; 
-        // @include respond(tab-port) { 
-        //     height: 5rem;
-        //     width: 5rem;
-        //     position: fixed;
-        //     top: 4.5rem;
-        //     right: 5rem;
-        //   }
+       
+    }
+    &__button--contact-us { 
+        background-color:rgb(211, 206, 206);      
+        height: 5rem;                         
+        width: 5.5rem;                     
+        position: fixed;  
+        top: calc(10vh + 5rem);                 
+        right: 0;     
+        z-index: 2000;  
+        cursor: pointer; 
+        margin-right: -1px;          
+        transition: all .8s linear;  
+        animation: contact-icon 2.5s linear;     
+  
+        svg {
+            fill: black; 
+            height: 90%;  
+            width: 90%;        
+        }
+ 
+        &:hover svg {    
+            transform: scale(1.06) translateY(2%);  
+        }
     }
 
  

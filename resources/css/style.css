@@ -116,6 +116,16 @@ body {
   100% {
     transform: scale(1); } }
 
+@keyframes contact-icon {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes card-fade-in-right {
   0% {
     transform: translate(-1rem, 1rem);
@@ -158,13 +168,22 @@ body {
 .js--wp-3-2-1,
 .js--wp-3-2-2,
 .js--wp-4-1,
+.js--wp-5-1,
+.js--wp-5-2-1,
+.js--wp-5-2-2,
+.js--wp-5-2-3,
 .js--wp-4-2-1,
 .js--wp-4-2-2,
 .js--wp-4-2-3,
 .js--wp-4-2-4,
 .js--wp-7-1,
 .js--wp-7-2,
-.js--wp-7-3 {
+.js--wp-7-3,
+.js--wp-8-1,
+.js--wp-8-2-1,
+.js--wp-8-2-2,
+.js--wp-8-2-3,
+.js--wp-8-3 {
   opacity: 0; }
 
 .js--wp-1-1.animate__animated,
@@ -179,9 +198,18 @@ body {
 .js--wp-4-2-2.animate__animated,
 .js--wp-4-2-3.animate__animated,
 .js--wp-4-2-4.animate__animated,
+.js--wp-5-1.animate__animated,
+.js--wp-5-2-1.animate__animated,
+.js--wp-5-2-2.animate__animated,
+.js--wp-5-2-3.animate__animated,
 .js--wp-7-1.animate__animated,
 .js--wp-7-2.animate__animated,
-.js--wp-7-3.animate__animated {
+.js--wp-7-3.animate__animated
+.js--wp-8-1.animate__animated,
+.js--wp-8-2-1.animate__animated,
+.js--wp-8-2-2.animate__animated,
+.js--wp-8-2-3.animate__animated,
+.js--wp-8-3.animate__animated {
   opacity: 1; }
 
 .animate__animated {
@@ -263,6 +291,7 @@ body {
   filter: brightness(150%);
   background-size: cover;
   background-position: top;
+  overflow: hidden;
   display: grid;
   grid-template-rows: min-content 1fr;
   position: relative; }
@@ -274,18 +303,19 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column; }
-  .header a {
+  .header a:link, .header a:visited {
+    font-family: sans-serif;
+    font-weight: 100;
     text-decoration: none;
     position: absolute;
     top: 90vh;
     left: 47%;
     color: white;
     font-size: 1.5rem; }
-    .header a :hover,
-    .header a :active {
-      border: none; }
+  .header a:hover, .header a:active {
+    border-bottom: 1px solid currentColor; }
   .header__logo-container {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     filter: brightness(66%);
     margin: 4vh;
     justify-self: start;
@@ -333,7 +363,7 @@ body {
     height: 11rem;
     margin-left: 5rem;
     display: block; }
-  .navigation__button {
+  .navigation__button--menu {
     background-color: #fff;
     height: 5rem;
     width: 5.5rem;
@@ -345,6 +375,24 @@ body {
     cursor: pointer;
     margin-right: -1px;
     transition: all .8s linear; }
+  .navigation__button--contact-us {
+    background-color: #d3cece;
+    height: 5rem;
+    width: 5.5rem;
+    position: fixed;
+    top: calc(10vh + 5rem);
+    right: 0;
+    z-index: 2000;
+    cursor: pointer;
+    margin-right: -1px;
+    transition: all .8s linear;
+    animation: contact-icon 2.5s linear; }
+    .navigation__button--contact-us svg {
+      fill: black;
+      height: 90%;
+      width: 90%; }
+    .navigation__button--contact-us:hover svg {
+      transform: scale(1.06) translateY(2%); }
   .navigation__nav {
     position: fixed;
     top: 0;
@@ -539,6 +587,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
       padding: 3rem 5vw 5.5rem 5vw; } }
 
 .section-locations {
+  overflow: hidden;
   margin-top: -13rem;
   padding: 6rem 0 4rem 0;
   background-image: linear-gradient(to bottom, #ECEFF1, #ECEFF1);

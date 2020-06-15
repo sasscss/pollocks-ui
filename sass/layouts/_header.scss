@@ -4,7 +4,7 @@
     filter: brightness(150%);      
     background-size: cover;      
     background-position: top;       
-  
+    overflow: hidden;   
     @media only screen and (max-width: 75em)  { 
         background-position: left;            
     }
@@ -22,24 +22,29 @@
 
       
     a {
+       
+           &:link, 
+           &:visited { 
+            font-family:  sans-serif;
+            font-weight: 100;   
             text-decoration: none;
             position: absolute;
             top: 90vh;          
             left: 47%;   
-            color: white;
-            font-size: 1.5rem; 
-        
+            color: white; 
+            font-size: 1.5rem;  
+           }       
             
-            :hover,
-            :active {
+            &:hover,
+            &:active {                   
 
-                border: none;
+                border-bottom: 1px solid currentColor;  
             }
            
         }
      
    &__logo-container {  
-      background-color: rgba(255, 255, 255, 0.9);                                           
+      background-color: rgb(255, 255, 255);                                               
        filter: brightness(66%);            
        margin: 4vh;            
        justify-self: start;                 
