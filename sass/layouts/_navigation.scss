@@ -39,8 +39,8 @@
         transition: all .55s linear;  
         animation: contact-icon 2.5s linear;     
   
-        svg {
-            fill: black; 
+        svg {  
+            fill: black;  
             height: 90%;  
             width: 90%;        
         }
@@ -52,7 +52,7 @@
 
  
   
-    &__nav {  
+    &__nav {   
         position: fixed;         
         top: 0;     
         right: 0; //if it is right the nav list enters from right 
