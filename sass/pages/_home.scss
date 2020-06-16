@@ -1,6 +1,7 @@
 .section-about {        
     margin-bottom: 5rem;       
     padding: 4rem 5vw;        
+    height: 100vh; 
     background-size: cover;                          
    // overflow: hidden;
     @include respond(tab-port) {
@@ -19,7 +20,7 @@
 
 .section-academics{
    
-   padding-bottom: 2rem;         
+   padding-bottom: 2rem;          
     background-image: linear-gradient(to bottom,   
     #021220 0%,
     #021220 60%,         

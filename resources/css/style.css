@@ -627,6 +627,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-about {
   margin-bottom: 5rem;
   padding: 4rem 5vw;
+  height: 100vh;
   background-size: cover; }
   @media only screen and (max-width: 68.5em) {
     .section-about {
