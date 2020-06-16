@@ -171,7 +171,9 @@ body {
   animation-name: card-fade-in-up; }
 
 .js--wp-1-1,
-.js--wp-1-2,
+.js--wp-1-2-1,
+.js--wp-1-2-2,
+.js--wp-1-2-3,
 .js--wp-2-1,
 .js--wp-2-2,
 .js--wp-3-1,
@@ -197,7 +199,9 @@ body {
   opacity: 0; }
 
 .js--wp-1-1.animate__animated,
-.js--wp-1-2.animate__animated,
+.js--wp-1-2-1.animate__animated,
+.js--wp-1-2-2.animate__animated,
+.js--wp-1-2-3.animate__animated,
 .js--wp-2-1.animate__animated,
 .js--wp-2-2.animate__animated,
 .js--wp-3-1.animate__animated
@@ -622,7 +626,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 */
 .section-about {
   margin-bottom: 5rem;
-  padding: 3rem 5vw;
+  padding: 4rem 5vw;
   background-size: cover; }
   @media only screen and (max-width: 68.5em) {
     .section-about {
