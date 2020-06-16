@@ -56,12 +56,12 @@ $(document).ready(function(){
     //     offset:"70%"                  
     // }); 
 
-    // js--wp-3-1 3rd sec 1st component        
+    // js--wp-3-1 3rd sec 1st component          
     $('.js--wp-3-1').waypoint(function(direction){
-        $('.js--wp-3-1').addClass('animate__animated animate__fadeIn');
-    },{   
-        offset:"75%"     
-    }); 
+        $('.js--wp-3-1').addClass('animate__animated card-fade-in-up');
+    },{       
+        offset:"65%"     
+    });  
 
     // js--wp-3-2-1 3rd sec 2nd component  1st item      
 
@@ -70,7 +70,7 @@ $(document).ready(function(){
     },{   
         offset:"85%"      
     }); 
-
+ 
     // js--wp-3-2-2 3rd sec 2nd component  2nd item      
 
     $('.js--wp-3-2-2').waypoint(function(direction){
