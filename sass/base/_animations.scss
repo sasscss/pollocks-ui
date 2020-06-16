@@ -112,6 +112,19 @@
     }       
    
 }
+ @keyframes loader {
+   0% {
+     transform: scale(0);
+     opacity: 0;
+   }
+   50% { 
+     opacity: 1;
+   }
+   100% {
+     transform: scale(1);
+     opacity: 0;
+   }
+ }
 
 .card-fade-in-left {animation-name: card-fade-in-left;}
 

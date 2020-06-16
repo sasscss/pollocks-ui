@@ -21,7 +21,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
@@ -31,7 +31,9 @@
     <title>Pollocks School</title>
 </head>
 <body> 
-
+    <div class="pre-loader" id="load">
+        <div class="loader"></div>
+    </div>
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -50,16 +52,16 @@
             <ul class="navigation__list">
                 <li> <img src="./resources/images/pollocks-logo.png" alt="" class="navigation__logo"></li>
                 <li class="navigation__item"><a href="#header" class="navigation__link">Who are we</a></li>
-                <li class="navigation__item"><a href="https://sasscss.github.io/pollocks-ui/gallery.html" class="navigation__link">gallery</a></li> 
+                <li class="navigation__item"><a href="https://sasscss.github.io/pollocks-ui/" class="navigation__link">gallery</a></li> 
                 <li class="navigation__item"><a href="#" class="navigation__link"> pollocks walls</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">faculty</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">contact us</a></li>
 
             </ul>
         </nav>
-    </div>
+    </div> 
 
-    <header class="header" id="header">
+    <header class="header" id="header"  id="contents">
         <div class="header__logo-container">
             <img src="./resources/images/pollocks-logo.png" alt="" class="header__logo">
         </div>
@@ -476,6 +478,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
     <script src="resources/js/script.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="vendors/js/jquery.counterup.min.js"></script>
-</body>
+    <script src="vendors/js/jquery.counterup.min.js"></script>   
+    </body>
 </html>

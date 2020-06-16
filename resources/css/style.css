@@ -151,6 +151,16 @@ body {
     transform: translate(0, 0);
     opacity: 1; } }
 
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+
 .card-fade-in-left {
   animation-name: card-fade-in-left; }
 
@@ -567,6 +577,35 @@ body {
       color: white;
       display: inline-block;
       transform: scale(1.1) translateX(5%); }
+
+.pre-loader {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999; }
+
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: calc(50vh - 7.5rem);
+  left: calc(50vh - 7.5rem); }
+  .loader::before, .loader::after {
+    content: "";
+    border: .6em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0; }
+  .loader::before {
+    animation-delay: .5s; }
 
 /*
 0-600px   phone
@@ -1127,7 +1166,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   z-index: -1;
   visibility: hidden; }
   .section-newsfeed__container__image {
-    height: calc(100% - 8.4rem);
+    height: calc(100% - 8.3rem);
     width: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1162,7 +1201,6 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
   background-color: #8b0000; }
   .pre svg, .next svg {
     height: 95%;
-    margin-top: -.5px;
     fill: white;
     background-color: #920f0f;
     box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.322); }
