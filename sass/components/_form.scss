@@ -30,7 +30,7 @@
 
 .form{
     padding-left: 1rem;
-    height: 6rem; 
+    height: 4.5rem;     
     width: 36rem;     
     justify-self: center;
     display: grid;
@@ -38,7 +38,7 @@
     align-content: center; 
     border: 1.2px solid rgb(9, 175, 175); 
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
  
     &::after{
         content: "";
