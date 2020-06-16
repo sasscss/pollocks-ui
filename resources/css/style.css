@@ -592,7 +592,7 @@ body {
   height: 15rem;
   position: absolute;
   top: calc(50vh - 7.5rem);
-  left: calc(50vh - 7.5rem); }
+  left: calc(50vw - 7.5rem); }
   .loader::before, .loader::after {
     content: "";
     border: .6em solid #ff5733;
