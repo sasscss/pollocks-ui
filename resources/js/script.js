@@ -3,19 +3,20 @@ document.onreadystatechange = function () {
   if (state == 'complete') {
          document.getElementById('interactive');
          document.getElementById('load').style.visibility="hidden"; 
+         if(document.URL.indexOf("#")==-1){
+            // Set the URL to whatever it was plus "#".
+            url = document.URL+"#";
+            location = "#";
+    
+            //Reload the page
+            location.reload(true);
+        }
   }
 }    
 /* .ready - it ensures that can only run after the document has been loaded */
 $(document).ready(function(){
 
-    if(document.URL.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.URL+"#";
-        location = "#";
-
-        //Reload the page
-        location.reload(true);
-    }
+   
     //js--wp-1 1st section after header
 
     $('.js--wp-1-1').waypoint(function(direction){ 
