@@ -8,11 +8,12 @@
 
 .loader{
     border: 0 solid transparent;
+    border-radius: 50%;
     width: 15rem; 
     height: 15rem;
     position: absolute;           
     top: calc(50vh - 7.5rem);
-    left: calc(50vw - 7.5rem); 
+    left: calc(50vw - 7.5rem);  
 
     &::before,
     &::after {
