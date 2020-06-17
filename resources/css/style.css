@@ -591,7 +591,6 @@ body {
 
 .loader {
   border: 0 solid transparent;
-  border-radius: 50%;
   width: 15rem;
   height: 15rem;
   position: absolute;
@@ -627,7 +626,7 @@ ORDER - base + typography + genreal layouts + grid  > page layout > components
 .section-about {
   margin-bottom: 5rem;
   padding: 4rem 5vw;
-  height: 100vh;
+  height: 97vh;
   background-size: cover; }
   @media only screen and (max-width: 68.5em) {
     .section-about {

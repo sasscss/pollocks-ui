@@ -1,8 +1,8 @@
 .section-about {        
     margin-bottom: 5rem;       
-    padding: 4rem 5vw;        
-    height: 100vh; 
-    background-size: cover;                          
+    padding: 4rem 5vw;         
+    height: 97vh;  
+    background-size: cover;                            
    // overflow: hidden;
     @include respond(tab-port) {
         padding: 3rem 5vw 5.5rem 5vw;    
@@ -11,7 +11,7 @@
            
 .section-locations{      
     overflow: hidden;  
-    margin-top: -13rem;       
+    margin-top: -13rem;        
     padding: 6rem 0 4rem 0;          
     background-image: linear-gradient(to bottom, #ECEFF1,#ECEFF1);
     -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 85%);
